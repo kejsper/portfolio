@@ -5,7 +5,7 @@ $(document).ready(function() {
   var slider = $('.slider');
   var next = $('.next');
   var back = $('.back');
-  var howManySlides = slide.length;
+  var howManySlides = slide.length + 1;
   whichSlide = 0;
 
   windowSize ();
@@ -21,23 +21,27 @@ $(document).ready(function() {
     intro1.css('height', (height/2)).css('width', (width));
     $('.intro-wrapper').css('height', (height/2)).css('width', (width));
     intro2.css('height', (height/2)).css('width', (width));
-    slide.css('height', height).css('width', width);
-    slider.css('margin-left', -(width*whichSlide));
+    slide.css('height', height).css('width', width).css('left', (-width));
+    $('.slide-main').css('height', height).css('width', width);
+    if (whichSlide > 1) {
+      slider.css('margin-left', -(width*(whichSlide-1)));
+    }
   }
 
   next.on('click', function () {
     var margin = $(window).width();
     if (whichSlide === 0) {
       intro1.slideUp(1200);
-      intro2.fadeOut(1200).promise().done(function () {
-        slider.animate({marginLeft: -margin});
+      intro2.fadeOut(1200).promise().done(function() {
+        $('#slide0').css('z-index', '-1');
       });
       whichSlide = whichSlide+1;
       back.css('visibility', 'visible');
     }
     else if (whichSlide > 0 && whichSlide < howManySlides) {
-      whichSlide = whichSlide + 1;
+
       slider.animate({marginLeft: -(whichSlide * margin)});
+      whichSlide = whichSlide + 1;
       if ((whichSlide + 1)===howManySlides){
         next.css('visibility', 'hidden');
       }
@@ -48,10 +52,10 @@ $(document).ready(function() {
     var margin = $(window).width();
     var realMargin = parseInt(slider.css('margin-left'));
     if(whichSlide === 1) {
-      slider.animate({marginLeft: 0}).promise().done(function() {
+        $('#slide0').css('z-index', '5');
         intro1.slideDown(1200);
         intro2.fadeIn(1200);
-      });
+
       whichSlide = whichSlide - 1;
       back.css('visibility', 'hidden');
     }
