@@ -1,0 +1,68 @@
+@import 'variables';
+
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper {
+  overflow-x: hidden;
+}
+
+#slide0 {
+  float: left;
+  display:block;
+  background-color: $c_brighter;
+  z-index: 100;
+}
+
+.intro1 {
+  background-color: $green;
+}
+
+.intro2 {
+  background-color: $green;
+}
+
+.intro-wrapper {
+  overflow: hidden;
+
+}
+
+#slide1 {
+  background-color: $c_bright;
+  float: left;
+  display: block;
+  z-index: 1;
+}
+
+#slide2 {
+  background-color: $b_dark;
+  float: left;
+  display: block;
+}
+
+#slide3 {
+  background-color: $d_red;
+  float: left;
+  display: block;
+}
+
+
+.next {
+  position: fixed;
+  top: 50%;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  background-color: yellow;
+}
+
+.back {
+  position: fixed;
+  top: 50%;
+  left: 30px;
+  width: 50px;
+  height: 50px;
+  background-color: yellow;
+}
