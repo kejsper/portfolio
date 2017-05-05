@@ -21,10 +21,15 @@ html, body {
 
 .intro1 {
   background-color: $green;
+  background-image: url('../../img/intro11.jpg');
+  background-position: center 30%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .intro2 {
   background-color: $green;
+
 }
 
 .intro-wrapper {
@@ -41,7 +46,7 @@ html, body {
 }
 
 #slide1 {
-  background-color: #DDE920;
+  background-color: #DCB967;
 
 }
 
@@ -92,12 +97,12 @@ html, body {
 }
 
 #slide2 {
-  background-color: $b_dark;
+  background-color: #A4564C;
 
 }
 
 #slide3 {
-  background-color: $d_red;
+  background-color: #4A494E;
 
 }
 

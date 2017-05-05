@@ -16,7 +16,11 @@ html, body {
   z-index: 5; }
 
 .intro1 {
-  background-color: #86AF49; }
+  background-color: #86AF49;
+  background-image: url("../../img/intro11.jpg");
+  background-position: center 30%;
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 .intro2 {
   background-color: #86AF49; }
@@ -32,7 +36,7 @@ html, body {
   top: 0; }
 
 #slide1 {
-  background-color: #DDE920; }
+  background-color: #DCB967; }
 
 .cogs {
   position: relative;
@@ -76,10 +80,10 @@ html, body {
   100% {
     transform: rotate(380deg); } }
 #slide2 {
-  background-color: #166A8E; }
+  background-color: #A4564C; }
 
 #slide3 {
-  background-color: #BA1A34; }
+  background-color: #4A494E; }
 
 .next {
   position: fixed;
