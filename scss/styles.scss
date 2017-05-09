@@ -19,23 +19,26 @@ html, body {
   z-index: 5;
 }
 
+.intro-wrapper {
+  overflow: hidden;
+
+}
+
 .intro1 {
   background-color: $green;
-  background-image: url('../../img/intro11.jpg');
+  background-image: url('../../img/intro111.jpg');
   background-position: center 30%;
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 
 .intro2 {
   background-color: $green;
 
 }
 
-.intro-wrapper {
-  overflow: hidden;
 
-}
 
 .slide {
   float: left;
@@ -50,10 +53,22 @@ html, body {
 
 }
 
+.cogs-big {
+
+  position: absolute;
+  top: -250px;
+  right: -250px;
+}
+
+.cog3 {
+  font-size: 500px;
+  color: $d_red;
+}
+
 .cogs {
   position: relative;
-  top: 80px;
-  left: 320px;
+  top: 0px;
+  left: 0px;
 }
 
 .cog1 {
@@ -102,7 +117,7 @@ html, body {
 }
 
 #slide3 {
-  background-color: #4A494E;
+  background-color: $b_dark;
 
 }
 

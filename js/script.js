@@ -18,9 +18,9 @@ $(document).ready(function() {
     width = $(window).width();
     $('.wrapper').css('height', height).css('width', width);
     slider.css('height', height).css('width', width*howManySlides);
-    intro1.css('height', (height/2)).css('width', (width));
-    $('.intro-wrapper').css('height', (height/2)).css('width', (width));
-    intro2.css('height', (height/2)).css('width', (width));
+    intro1.css('height', ((height/3)*2)).css('width', (width));
+    $('.intro-wrapper').css('height', ((height/3)*2)).css('width', (width));
+    intro2.css('height', (height/3)).css('width', (width));
     slide.css('height', height).css('width', width).css('left', (-width));
     $('.slide-main').css('height', height).css('width', width);
     if (whichSlide > 1) {

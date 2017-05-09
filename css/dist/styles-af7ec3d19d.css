@@ -15,18 +15,18 @@ html, body {
   left: 0;
   z-index: 5; }
 
+.intro-wrapper {
+  overflow: hidden; }
+
 .intro1 {
   background-color: #86AF49;
-  background-image: url("../../img/intro11.jpg");
+  background-image: url("../../img/intro111.jpg");
   background-position: center 30%;
   background-repeat: no-repeat;
   background-size: cover; }
 
 .intro2 {
   background-color: #86AF49; }
-
-.intro-wrapper {
-  overflow: hidden; }
 
 .slide {
   float: left;
@@ -38,10 +38,19 @@ html, body {
 #slide1 {
   background-color: #DCB967; }
 
+.cogs-big {
+  position: absolute;
+  top: -250px;
+  right: -250px; }
+
+.cog3 {
+  font-size: 500px;
+  color: #BA1A34; }
+
 .cogs {
   position: relative;
-  top: 80px;
-  left: 320px; }
+  top: 0px;
+  left: 0px; }
 
 .cog1 {
   font-size: 80px;
@@ -83,7 +92,7 @@ html, body {
   background-color: #A4564C; }
 
 #slide3 {
-  background-color: #4A494E; }
+  background-color: #166A8E; }
 
 .next {
   position: fixed;
