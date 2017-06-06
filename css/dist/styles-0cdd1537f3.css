@@ -490,23 +490,24 @@ html, body {
 
 .welcome-pic {
   position: relative;
-  width: 75%;
+  width: 80%;
   height: 570px;
   background-image: url("../../img/intro1bw.jpg");
   background-size: cover; }
 
 .hello {
   position: absolute;
-  right: 20px;
+  left: -100px;
   top: 75%;
-  width: 400px;
+  padding-left: 20px;
+  width: 1140px;
   height: 100px;
   background-color: #FFF69F; }
 
 .hello-header {
-  text-align: center;
+  text-align: left;
   font-family: "Bevan", cursive;
-  font-size: 4em;
+  font-size: 3.3em;
   margin-top: 20px;
   margin-bottom: 0; }
 
@@ -533,39 +534,45 @@ html, body {
 
 /* SLIDE 1 STYLES */
 .slide1-header {
-  width: 90%;
+  width: 100%;
   padding-top: 100px;
   margin: 0 auto; }
 
+.about-photo {
+  position: relative;
+  width: 65%;
+  height: 570px;
+  margin: 0 0 0 auto;
+  background-image: url("../../img/slide1v1.jpg");
+  background-size: cover; }
+
 .about {
-  width: 49%;
-  border-left: 2px solid #FF5E53;
-  border-top: 2px solid #FF5E53;
-  border-bottom: 2px solid #FF5E53;
-  height: 376px;
-  float: left; }
+  position: absolute;
+  top: -55px;
+  left: -280px;
+  width: 990px;
+  height: 100px;
+  background-color: #F85563;
+  padding: 0 40px; }
 
 .about-header {
-  font-family: "Hind Siliguri", sans-serif;
-  font-weight: 400;
-  text-align: center;
-  line-height: 1.5;
-  font-size: 3em;
+  text-align: left;
+  font-family: "Bevan", cursive;
+  font-size: 3.3em;
+  margin-top: 20px;
+  margin-bottom: 0;
   letter-spacing: 5px; }
+
+.about2 {
+  position: absolute;
+  top: 75px;
+  left: -400px; }
 
 .about-subheader {
   font-family: "Hind Siliguri", sans-serif;
   font-weight: 300;
   line-height: 2;
-  padding-left: 20px;
-  padding-right: 10px; }
-
-.about-photo {
-  width: 50%;
-  height: 380px;
-  background-image: url("../../img/slide1v1.jpg");
-  background-size: cover;
-  float: left; }
+  font-size: 2em; }
 
 #slide2 {
   background-color: #A4564C; }
