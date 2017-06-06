@@ -1,3 +1,6 @@
+@import 'default/normalize';
+@import 'fonts';
+@import 'grid';
 @import 'variables';
 @import 'animations';
 
@@ -17,25 +20,74 @@ html, body {
   top: 0;
   left: 0;
   z-index: 5;
+  margin-top: 0;
+  padding-top: 0;
 }
 
 .intro-wrapper {
   overflow: hidden;
-
+  margin-top: 0;
+  padding-top: 0;
 }
 
 .intro1 {
-  background-color: $green;
-  background-image: url('../../img/intro111.jpg');
-  background-position: center 30%;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #fff;
+  margin-top: 0;
+  padding-top: 0;
 }
 
+/* SLIDE 1 STYLES */
+.top-bar {
+  text-align: left;
+}
 
-.intro2 {
-  background-color: $green;
+.logo {
+  font-family: $font-logo;
+  padding-top: 10px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
 
+.empty-space {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.welcome-pic {
+  position: relative;
+  width:75%;
+  height: 570px;
+  background-image: url('../../img/intro1bw.jpg');
+  background-size: cover;
+}
+.hello {
+  position: absolute;
+  right: 20px;
+  top: 75%;
+  width: 400px;
+  height: 100px;
+  background-color: #FFF69F;
+}
+
+.hello-header {
+  text-align: center;
+  font-family: $font-hello1;
+  font-size: 4em;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.welcome-message {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.welcome-message-header {
+  font-family: $font-welcome-message3;
+  font-size: 2.2em;
+  font-weight: 300;
 }
 
 
@@ -46,69 +98,52 @@ html, body {
   z-index: 1;
   position: relative;
   top:0;
+
 }
 
 #slide1 {
-  background-color: #DCB967;
+  background-color: #F2EFED;
 
 }
 
-.cogs-big {
-
-  position: absolute;
-  top: -250px;
-  right: -250px;
+/* SLIDE 1 STYLES */
+.slide1-header {
+  width: 90%;
+  padding-top: 100px;
+  margin: 0 auto;
+}
+.about {
+  width: 49%;
+  border-left: 2px solid #FF5E53;
+  border-top: 2px solid #FF5E53;
+  border-bottom: 2px solid #FF5E53;
+  height: 376px;
+  float:left;
+}
+.about-header {
+  font-family: $font-welcome-message3;
+  font-weight: 400;
+  text-align: center;
+  line-height: 1.5;
+  font-size: 3em;
+  letter-spacing: 5px;
 }
 
-.cog3 {
-  font-size: 500px;
-  color: $d_red;
+.about-subheader {
+  font-family: $font-welcome-message3;
+  font-weight: 300;
+  line-height: 2;
+
+  padding-left: 20px;
+  padding-right: 10px;
 }
 
-.cogs {
-  position: relative;
-  top: 0px;
-  left: 0px;
-}
-
-.cog1 {
-  font-size: 80px;
-  color: blue;
-}
-
-.cog2 {
-  font-size: 70px;
-  color: green;
-  position: relative;
-  top: 20px;
-  left: -12px;
-  transform: rotate(20deg);
-}
-
-.cogs:hover .cog1 {
-  animation-name: cog1;
-  animation-duration: 3s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-direction: normal;
-}
-
-@keyframes cog1 {
-  0% {transform: rotate(0deg);}
-  100% {transform: rotate(360deg);}
-}
-
-.cogs:hover .cog2 {
-  animation-name: cog2;
-  animation-duration: 3s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-direction: reverse;
-}
-
-@keyframes cog2 {
-  0% {transform: rotate(20deg);}
-  100% {transform: rotate(380deg);}
+.about-photo {
+  width: 50%;
+  height: 380px;
+  background-image: url('../../img/slide1v1.jpg');
+  background-size: cover;
+  float:left;
 }
 
 #slide2 {

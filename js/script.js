@@ -18,9 +18,9 @@ $(document).ready(function() {
     width = $(window).width();
     $('.wrapper').css('height', height).css('width', width);
     slider.css('height', height).css('width', width*howManySlides);
-    intro1.css('height', ((height/3)*2)).css('width', (width));
-    $('.intro-wrapper').css('height', ((height/3)*2)).css('width', (width));
-    intro2.css('height', (height/3)).css('width', (width));
+    intro1.css('height', height).css('width', width);
+    $('.intro-wrapper').css('height', height).css('width', width);
+
     slide.css('height', height).css('width', width).css('left', (-width));
     $('.slide-main').css('height', height).css('width', width);
     if (whichSlide > 1) {
@@ -28,13 +28,14 @@ $(document).ready(function() {
     }
   }
 
+
   next.on('click', function () {
     var margin = $(window).width();
     if (whichSlide === 0) {
-      intro1.slideUp(1200);
-      intro2.fadeOut(1200).promise().done(function() {
+      intro1.slideUp(1200).promise().done(function() {
         $('#slide0').css('z-index', '-1');
       });
+
       whichSlide = whichSlide+1;
       back.css('visibility', 'visible');
     }
@@ -52,10 +53,8 @@ $(document).ready(function() {
     var margin = $(window).width();
     var realMargin = parseInt(slider.css('margin-left'));
     if(whichSlide === 1) {
-        $('#slide0').css('z-index', '5');
-        intro1.slideDown(1200);
-        intro2.fadeIn(1200);
-
+      $('#slide0').css('z-index', '5');
+      intro1.slideDown(1200);
       whichSlide = whichSlide - 1;
       back.css('visibility', 'hidden');
     }
@@ -67,7 +66,5 @@ $(document).ready(function() {
       }
     }
   });
-
-
 
 });

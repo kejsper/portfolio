@@ -5,8 +5,9 @@ var sass = require('gulp-ruby-sass');
 var livereload = require('gulp-livereload');
 var rev = require('gulp-rev');
 var inject = require('gulp-inject');
-var sources;
-var sourcesjs;
+var fs = require('fs');
+var jsonCss;
+var jsonJs;
 
 
 gulp.task('default', ['autoprefixer', 'delete', 'livereload']);
@@ -54,18 +55,16 @@ gulp.task('assemble', ['sass'], function() {
 });
 
 gulp.task('index', ['assemble', 'jsHash'], function() {
-  delete require.cache[require.resolve('./css/dist/rev-manifest.json')];
-  delete require.cache[require.resolve('./js/dist/rev-manifest.json')];
-  sources = require('./css/dist/rev-manifest.json');
-  sourcesjs = require('./js/dist/rev-manifest.json');
+  jsonCss = JSON.parse(fs.readFileSync('./css/dist/rev-manifest.json'));
+  jsonJs = JSON.parse(fs.readFileSync('./js/dist/rev-manifest.json'));
   var target = gulp.src('./index.html');
-  var source = gulp.src(['./js/dist/' + sourcesjs['script.js'], './css/dist/' + sources['styles.css']], {read: false});
+  var source = gulp.src(['./js/dist/' + jsonJs['script.js'], './css/dist/' + jsonCss['styles.css']], {read: false});
   return target.pipe(inject(source, {relative: true}))
     .pipe(gulp.dest(''));
 });
 
 gulp.task('delete', ['index'], function () {
-  return gulp.src([ 'css/dist/*.css', 'js/dist/*.js', '!css/dist/' + sources['styles.css'], '!js/dist/' + sourcesjs['script.js'] ])
+  return gulp.src([ 'css/dist/*.css', 'js/dist/*.js', '!css/dist/' + jsonCss['styles.css'], '!js/dist/' + jsonJs['script.js'] ])
     .pipe(clean());
 });
 
