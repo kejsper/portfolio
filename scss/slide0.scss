@@ -1,0 +1,105 @@
+/* SLIDE 0 STYLES */
+
+@media only screen and (min-width: 1200px) {
+  .photo {
+    width: 42%;
+    height: 100%;
+    float:left;
+    background-image: url('../../img/welcome-pic.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 5%;
+
+  }
+  .welcome {
+    width: 58%;
+    height: 100%;
+    position: relative;
+    float: left;
+    display: flex;
+    align-items: center;
+  }
+
+  .hello {
+    padding-left: 125px;
+  }
+
+  .hello-header {
+    font-family: $font-main;
+    font-weight: 600;
+    font-size: 85px;
+    line-height: 1.35;
+    margin: 0 0;
+  }
+
+  .name-header {
+    font-family: $font-main;
+    font-weight: 600;
+    font-size: 70px;
+    line-height: 1.35;
+    margin: 0 0;
+  }
+
+  .hello-subheader {
+    font-family: $font-main;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 0.75;
+    margin: 0 0;
+  }
+
+  .forward {
+    position: absolute;
+    bottom: 45px;
+    right: 90px;
+    width: 330px;
+    cursor: pointer;
+  }
+  .mystory {
+    font-family: $font-main;
+    font-size: 20px;
+    font-weight: 400;
+
+  }
+}
+
+
+@media only screen and (min-width: 1600px) {
+  .hello-header {
+    font-family: $font-main;
+    font-weight: 600;
+    font-size: 115px;
+    line-height: 1.35;
+    margin: 0 0;
+  }
+
+  .name-header {
+    font-family: $font-main;
+    font-weight: 600;
+    font-size: 95px;
+    line-height: 1.35;
+    margin: 0 0;
+  }
+
+  .hello-subheader {
+    font-family: $font-main;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 0.75;
+    margin: 0 0;
+  }
+
+  .forward {
+    position: absolute;
+    bottom: 55px;
+    right: 100px;
+    width: 330px;
+    cursor: pointer;
+  }
+  .mystory {
+    font-family: $font-main;
+    font-size: 20px;
+    font-weight: 400;
+
+  }
+}
