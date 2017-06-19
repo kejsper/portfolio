@@ -1,6 +1,145 @@
+@import 'mixins';
 /* SLIDE 4 STYLES */
+.form-label {
+  display: block;
+  text-align: center;
+}
 
-@media only screen and (min-width:1000px) and (orientation: landscape) {
+.form-text {
+  width: 100%;
+  height: 30px;
+  border: 1px solid #C8C6C6;
+  border-radius: 5px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  padding-left: 15px;
+  &:focus {
+    outline: none;
+    border: 1px solid black;
+  }
+}
+
+.form-textarea {
+  width: 100%;
+  border: 1px solid #C8C6C6;
+  border-radius: 10px;
+  margin-top: 5px;
+  margin-bottom: 30px;
+  padding: 15px 15px;
+  resize: none;
+  &:focus {
+    outline: none;
+    border: 1px solid black;
+  }
+}
+.form-submit {
+  display:block;
+  background-color: #fff;
+  cursor: pointer;
+  border: 1px solid #C8C6C6;
+  border-radius: 5px;
+  padding: 10px 60px 10px 60px;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 992px) {
+  .contact-row {
+    padding-top: 45px;
+  }
+  .contact-header {
+    @include font-header(120px, 600);
+    line-height: 1;
+    margin: 0 0 30px 0;
+  }
+  .contact-paragraph {
+    @include font-header(26px, 300);
+    line-height: 2;
+    margin: 0 0;
+  }
+  .contact-paragraph-end {
+    @include font-header(28px, 600);
+    line-height: 2;
+    margin: 0 0;
+  }
+
+  .signature {
+    padding-top: 15px;
+    text-align: center;
+  }
+  .signature-image {
+    width: 75%;
+    height: auto;
+
+  }
+  .signature-subheader {
+    @include font-header(18px, 300);
+    color: #95989A;
+    margin: -10px auto 0 -40px;
+  }
+
+  .form-container {
+
+    margin-top: 45px;
+  }
+
+  .form-label {
+    @include font-header(26px, 400);
+  }
+  .form-text {
+    @include font-header(18px, 400);
+  }
+
+  .form-textarea {
+    @include font-header(18px, 400);
+  }
+  .form-submit {
+    @include font-header(30px, 600);
+  }
+
+}
+
+@media only screen and (max-width: 500px) {
+  .contact-header {
+    @include font-header(90px, 600);
+    line-height: 1;
+    margin: 0 0 20px 0;
+  }
+  .contact-paragraph {
+    @include font-header(20px, 300);
+    line-height: 2;
+    margin: 0 0;
+  }
+  .contact-paragraph-end {
+    @include font-header(22px, 600);
+    line-height: 2;
+    margin: 0 0;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .contact-header {
+    @include font-header(75px, 600);
+    line-height: 1;
+    margin: 0 0 20px 0;
+  }
+  .contact-paragraph {
+    @include font-header(16px, 300);
+    line-height: 2;
+    margin: 0 0;
+  }
+  .contact-paragraph-end {
+    @include font-header(18px, 600);
+    line-height: 2;
+    margin: 0 0;
+  }
+  .signature-subheader {
+    @include font-header(16px, 300);
+    color: #95989A;
+    margin: -10px auto 0 -40px;
+  }
+}
+
+@media only screen and (min-width:993px){
   .contact-row {
     padding-top: 45px;
   }
@@ -41,60 +180,34 @@
   }
 
   .form-label {
-    display: block;
-    text-align: center;
     @include font-header(26px, 400);
   }
   .form-text {
-    width: 100%;
-    height: 30px;
-    border: 1px solid #C8C6C6;
-    border-radius: 5px;
-    margin-top: 5px;
-    margin-bottom: 15px;
-    padding-left: 15px;
-
     @include font-header(18px, 400);
-    &:focus {
-      outline: none;
-      border: 1px solid black;
-    }
   }
 
   .form-textarea {
-    width: 100%;
-    border: 1px solid #C8C6C6;
-    border-radius: 10px;
-    margin-top: 5px;
-    margin-bottom: 30px;
-    padding: 15px 15px;
-    resize: none;
     @include font-header(18px, 400);
-    &:focus {
-      outline: none;
-      border: 1px solid black;
-    }
   }
   .form-submit {
-    display:block;
-    background-color: #fff;
     @include font-header(30px, 600);
-    cursor: pointer;
-    border: 1px solid #C8C6C6;
-    border-radius: 5px;
-    padding: 10px 60px 10px 60px;
-    margin: 0 auto;
   }
 }
 
-@media only screen and (min-width:1599px) and (orientation: landscape) {
+@media only screen and (min-width:1599px){
   .contact-row {
     padding-top: 75px;
   }
 }
 
-@media only screen and (min-width:1800px) and (orientation: landscape) {
+@media only screen and (min-width:1800px){
   .contact-row {
     padding-top: 185px;
+  }
+}
+
+@media only screen and (min-width:1000px) and (min-height: 1000px) and (orientation: portrait){
+  .contact-row {
+    padding-top: 210px;
   }
 }

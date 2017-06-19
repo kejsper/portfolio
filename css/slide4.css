@@ -1,87 +1,221 @@
-/*
-Error: Undefined mixin 'font-header'.
-        on line 8 of scss/slide4.scss, in `font-header'
-        from line 8 of scss/slide4.scss
+/* SLIDE 4 STYLES */
+.form-label {
+  display: block;
+  text-align: center; }
 
-3: @media only screen and (min-width:1000px) and (orientation: landscape) {
-4:   .contact-row {
-5:     padding-top: 45px;
-6:   }
-7:   .contact-header {
-8:     @include font-header(120px, 600);
-9:     line-height: 1;
-10:     margin: 0 0 30px 0;
-11:   }
-12:   .contact-paragraph {
-13:     @include font-header(26px, 300);
+.form-text {
+  width: 100%;
+  height: 30px;
+  border: 1px solid #C8C6C6;
+  border-radius: 5px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  padding-left: 15px; }
+  .form-text:focus {
+    outline: none;
+    border: 1px solid black; }
 
-Backtrace:
-scss/slide4.scss:8:in `font-header'
-scss/slide4.scss:8
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:351:in `block in visit_mixin'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:98:in `block in with_mixin'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:98:in `with_mixin'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:349:in `visit_mixin'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `map'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:515:in `visit_media'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:159:in `visit'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:8:in `visit'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/root_node.rb:20:in `render'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/engine.rb:281:in `render'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:494:in `update_stylesheet'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `each'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin.rb:82:in `update_stylesheets'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:340:in `watch_or_update'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:51:in `process_result'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/exec/base.rb:52:in `parse'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/exec/base.rb:19:in `parse!'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/bin/sass:13:in `<top (required)>'
-C:/Ruby23-x64/bin/sass:22:in `load'
-C:/Ruby23-x64/bin/sass:22:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Undefined mixin 'font-header'.\A         on line 8 of scss/slide4.scss, in `font-header'\A         from line 8 of scss/slide4.scss\A \A 3: @media only screen and (min-width:1000px) and (orientation: landscape) {\A 4:   .contact-row {\A 5:     padding-top: 45px;\A 6:   }\A 7:   .contact-header {\A 8:     @include font-header(120px, 600);\A 9:     line-height: 1;\A 10:     margin: 0 0 30px 0;\A 11:   }\A 12:   .contact-paragraph {\A 13:     @include font-header(26px, 300);"; }
+.form-textarea {
+  width: 100%;
+  border: 1px solid #C8C6C6;
+  border-radius: 10px;
+  margin-top: 5px;
+  margin-bottom: 30px;
+  padding: 15px 15px;
+  resize: none; }
+  .form-textarea:focus {
+    outline: none;
+    border: 1px solid black; }
+
+.form-submit {
+  display: block;
+  background-color: #fff;
+  cursor: pointer;
+  border: 1px solid #C8C6C6;
+  border-radius: 5px;
+  padding: 10px 60px 10px 60px;
+  margin: 0 auto; }
+
+@media only screen and (max-width: 992px) {
+  .contact-row {
+    padding-top: 45px; }
+
+  .contact-header {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 120px;
+    font-weight: 600;
+    line-height: 1;
+    margin: 0 0 30px 0; }
+
+  .contact-paragraph {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 26px;
+    font-weight: 300;
+    line-height: 2;
+    margin: 0 0; }
+
+  .contact-paragraph-end {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 2;
+    margin: 0 0; }
+
+  .signature {
+    padding-top: 15px;
+    text-align: center; }
+
+  .signature-image {
+    width: 75%;
+    height: auto; }
+
+  .signature-subheader {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    color: #95989A;
+    margin: -10px auto 0 -40px; }
+
+  .form-container {
+    margin-top: 45px; }
+
+  .form-label {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 26px;
+    font-weight: 400; }
+
+  .form-text {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 18px;
+    font-weight: 400; }
+
+  .form-textarea {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 18px;
+    font-weight: 400; }
+
+  .form-submit {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 30px;
+    font-weight: 600; } }
+@media only screen and (max-width: 500px) {
+  .contact-header {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 90px;
+    font-weight: 600;
+    line-height: 1;
+    margin: 0 0 20px 0; }
+
+  .contact-paragraph {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 2;
+    margin: 0 0; }
+
+  .contact-paragraph-end {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 2;
+    margin: 0 0; } }
+@media only screen and (max-width: 375px) {
+  .contact-header {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 75px;
+    font-weight: 600;
+    line-height: 1;
+    margin: 0 0 20px 0; }
+
+  .contact-paragraph {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 2;
+    margin: 0 0; }
+
+  .contact-paragraph-end {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 2;
+    margin: 0 0; }
+
+  .signature-subheader {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #95989A;
+    margin: -10px auto 0 -40px; } }
+@media only screen and (min-width: 993px) {
+  .contact-row {
+    padding-top: 45px; }
+
+  .contact-header {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 120px;
+    font-weight: 600;
+    line-height: 1;
+    margin: 0 0 30px 0; }
+
+  .contact-paragraph {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 26px;
+    font-weight: 300;
+    line-height: 2;
+    margin: 0 0; }
+
+  .contact-paragraph-end {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 2;
+    margin: 0 0; }
+
+  .signature {
+    padding-top: 15px;
+    text-align: center; }
+
+  .signature-image {
+    width: 75%;
+    height: auto; }
+
+  .signature-subheader {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    color: #95989A;
+    margin: -10px auto 0 -40px; }
+
+  .form-container {
+    padding-left: 75px;
+    margin-top: 15px; }
+
+  .form-label {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 26px;
+    font-weight: 400; }
+
+  .form-text {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 18px;
+    font-weight: 400; }
+
+  .form-textarea {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 18px;
+    font-weight: 400; }
+
+  .form-submit {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 30px;
+    font-weight: 600; } }
+@media only screen and (min-width: 1599px) {
+  .contact-row {
+    padding-top: 75px; } }
+@media only screen and (min-width: 1800px) {
+  .contact-row {
+    padding-top: 185px; } }
+@media only screen and (min-width: 1000px) and (min-height: 1000px) and (orientation: portrait) {
+  .contact-row {
+    padding-top: 210px; } }

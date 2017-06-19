@@ -1558,6 +1558,43 @@ html {
     background-image: url("../../img/icons/arrow_330.svg");
     background-size: contain;
     background-repeat: no-repeat; } }
+@media only screen and (max-width: 550px) {
+  .hello-header {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 600;
+    font-size: 66px;
+    line-height: 1.35;
+    margin: 0 0; }
+
+  .name-header {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 1.35;
+    margin: 0 0; }
+
+  .hello-subheader {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 0.75;
+    margin: 0 0; }
+
+  .forward {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    cursor: pointer; }
+
+  .mystory {
+    font-family: "Titillium Web", sans-serif;
+    font-size: 16px;
+    font-weight: 400; }
+
+  .arrow {
+    width: 175px;
+    height: 16px;
+    background-repeat: no-repeat; } }
 @media only screen and (max-width: 450px) {
   .hello {
     padding-left: 50px;
@@ -2067,7 +2104,155 @@ html {
     background-size: contain;
     background-repeat: no-repeat; } }
 /* SLIDE 4 STYLES */
-@media only screen and (min-width: 1000px) and (orientation: landscape) {
+.form-label {
+  display: block;
+  text-align: center; }
+
+.form-text {
+  width: 100%;
+  height: 30px;
+  border: 1px solid #C8C6C6;
+  border-radius: 5px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  padding-left: 15px; }
+  .form-text:focus {
+    outline: none;
+    border: 1px solid black; }
+
+.form-textarea {
+  width: 100%;
+  border: 1px solid #C8C6C6;
+  border-radius: 10px;
+  margin-top: 5px;
+  margin-bottom: 30px;
+  padding: 15px 15px;
+  resize: none; }
+  .form-textarea:focus {
+    outline: none;
+    border: 1px solid black; }
+
+.form-submit {
+  display: block;
+  background-color: #fff;
+  cursor: pointer;
+  border: 1px solid #C8C6C6;
+  border-radius: 5px;
+  padding: 10px 60px 10px 60px;
+  margin: 0 auto; }
+
+@media only screen and (max-width: 992px) {
+  .contact-row {
+    padding-top: 45px; }
+
+  .contact-header {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 120px;
+    font-weight: 600;
+    line-height: 1;
+    margin: 0 0 30px 0; }
+
+  .contact-paragraph {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 26px;
+    font-weight: 300;
+    line-height: 2;
+    margin: 0 0; }
+
+  .contact-paragraph-end {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 2;
+    margin: 0 0; }
+
+  .signature {
+    padding-top: 15px;
+    text-align: center; }
+
+  .signature-image {
+    width: 75%;
+    height: auto; }
+
+  .signature-subheader {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    color: #95989A;
+    margin: -10px auto 0 -40px; }
+
+  .form-container {
+    margin-top: 45px; }
+
+  .form-label {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 26px;
+    font-weight: 400; }
+
+  .form-text {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 18px;
+    font-weight: 400; }
+
+  .form-textarea {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 18px;
+    font-weight: 400; }
+
+  .form-submit {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 30px;
+    font-weight: 600; } }
+@media only screen and (max-width: 500px) {
+  .contact-header {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 90px;
+    font-weight: 600;
+    line-height: 1;
+    margin: 0 0 20px 0; }
+
+  .contact-paragraph {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 2;
+    margin: 0 0; }
+
+  .contact-paragraph-end {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 2;
+    margin: 0 0; } }
+@media only screen and (max-width: 375px) {
+  .contact-header {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 75px;
+    font-weight: 600;
+    line-height: 1;
+    margin: 0 0 20px 0; }
+
+  .contact-paragraph {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 2;
+    margin: 0 0; }
+
+  .contact-paragraph-end {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 2;
+    margin: 0 0; }
+
+  .signature-subheader {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #95989A;
+    margin: -10px auto 0 -40px; } }
+@media only screen and (min-width: 993px) {
   .contact-row {
     padding-top: 45px; }
 
@@ -2112,59 +2297,33 @@ html {
     margin-top: 15px; }
 
   .form-label {
-    display: block;
-    text-align: center;
     font-family: 'Titillium Web', sans-serif;
     font-size: 26px;
     font-weight: 400; }
 
   .form-text {
-    width: 100%;
-    height: 30px;
-    border: 1px solid #C8C6C6;
-    border-radius: 5px;
-    margin-top: 5px;
-    margin-bottom: 15px;
-    padding-left: 15px;
     font-family: 'Titillium Web', sans-serif;
     font-size: 18px;
     font-weight: 400; }
-    .form-text:focus {
-      outline: none;
-      border: 1px solid black; }
 
   .form-textarea {
-    width: 100%;
-    border: 1px solid #C8C6C6;
-    border-radius: 10px;
-    margin-top: 5px;
-    margin-bottom: 30px;
-    padding: 15px 15px;
-    resize: none;
     font-family: 'Titillium Web', sans-serif;
     font-size: 18px;
     font-weight: 400; }
-    .form-textarea:focus {
-      outline: none;
-      border: 1px solid black; }
 
   .form-submit {
-    display: block;
-    background-color: #fff;
     font-family: 'Titillium Web', sans-serif;
     font-size: 30px;
-    font-weight: 600;
-    cursor: pointer;
-    border: 1px solid #C8C6C6;
-    border-radius: 5px;
-    padding: 10px 60px 10px 60px;
-    margin: 0 auto; } }
-@media only screen and (min-width: 1599px) and (orientation: landscape) {
+    font-weight: 600; } }
+@media only screen and (min-width: 1599px) {
   .contact-row {
     padding-top: 75px; } }
-@media only screen and (min-width: 1800px) and (orientation: landscape) {
+@media only screen and (min-width: 1800px) {
   .contact-row {
     padding-top: 185px; } }
+@media only screen and (min-width: 1000px) and (min-height: 1000px) and (orientation: portrait) {
+  .contact-row {
+    padding-top: 210px; } }
 html, body {
   padding: 0;
   margin: 0; }
