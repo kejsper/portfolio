@@ -106,23 +106,17 @@
   /* HEADER */
 
   .work-header {
-    font-family: $font-main;
-    font-weight: 600;
-    font-size: 120px;
+    @include font-header(120px, 600);
     line-height: 0.9;
     margin: 0 0;
   }
   .work-subheader {
-    font-family: $font-main;
-    font-weight: 400;
-    font-size: 60px;
+    @include font-header(60px, 400);
     line-height: 0.9;
     margin: 0 0;
   }
   .work2-header {
-    font-family: $font-main;
-    font-weight: 600;
-    font-size: 90px;
+    @include font-header(90px, 600);
     line-height: 0.9;
     margin: 0 0;
   }

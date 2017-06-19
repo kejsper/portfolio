@@ -1,0 +1,30 @@
+@import 'mixins';
+
+/* SLIDE 1 STYLES */
+
+
+@media only screen and (min-width: 1200px) {
+  .skills-row {
+    padding-top: 45px;
+  }
+  .skills-header {
+    @include font-header(120px, 600);
+    line-height: 0.9;
+    margin: 0 0;
+  }
+  .skills-subheader {
+    @include font-header(60px, 400);
+    line-height: 0.9;
+    margin: 0 0;
+  }
+  .skills2-header {
+    @include font-header(90px,600);
+    line-height: 0.9;
+    margin: 0 0;
+  }
+  .skills-paragraph {
+    @include font-header(26px, 300);
+    line-height: 1.9;
+    margin: 0 0;
+  }
+}
