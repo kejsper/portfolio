@@ -3,7 +3,9 @@
 @import 'fonts';
 @import 'variables';
 @import 'animations';
+@import 'mixins';
 @import 'slide0';
+@import 'slide2';
 
 html, body {
   padding: 0;
@@ -50,7 +52,7 @@ html, body {
 }
 
 #slide1 {
-  background-color: blue;
+  background-color: #fff;
 }
 
 /* SLIDE 1 STYLES */

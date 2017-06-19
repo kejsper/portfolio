@@ -1,0 +1,5 @@
+@mixin font-header($size, $weight) {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: $size;
+  font-weight: $weight;
+}
