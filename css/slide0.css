@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$font-main".
-        on line 28 of scss/slide0.scss
+        on line 26 of scss/slide0.scss
 
-23:   .hello {
-24:     padding-left: 125px;
-25:   }
-26: 
-27:   .hello-header {
-28:     font-family: $font-main;
-29:     font-weight: 600;
-30:     font-size: 85px;
-31:     line-height: 1.35;
-32:     margin: 0 0;
-33:   }
+21:     padding-left: 125px;
+22:     padding-top: 60px;
+23:   }
+24: 
+25:   .hello-header {
+26:     font-family: $font-main;
+27:     font-weight: 600;
+28:     font-size: 75px;
+29:     line-height: 1.35;
+30:     margin: 0 0;
+31:   }
 
 Backtrace:
-scss/slide0.scss:28
+scss/slide0.scss:26
 C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/script/tree/node.rb:58:in `perform'
 C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:397:in `visit_prop'
@@ -80,4 +80,4 @@ C:/Ruby23-x64/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$font-main\".\A         on line 28 of scss/slide0.scss\A \A 23:   .hello {\A 24:     padding-left: 125px;\A 25:   }\A 26: \A 27:   .hello-header {\A 28:     font-family: $font-main;\A 29:     font-weight: 600;\A 30:     font-size: 85px;\A 31:     line-height: 1.35;\A 32:     margin: 0 0;\A 33:   }"; }
+  content: "Error: Undefined variable: \"$font-main\".\A         on line 26 of scss/slide0.scss\A \A 21:     padding-left: 125px;\A 22:     padding-top: 60px;\A 23:   }\A 24: \A 25:   .hello-header {\A 26:     font-family: $font-main;\A 27:     font-weight: 600;\A 28:     font-size: 75px;\A 29:     line-height: 1.35;\A 30:     margin: 0 0;\A 31:   }"; }
