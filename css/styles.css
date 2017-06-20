@@ -1730,37 +1730,292 @@ html {
     font-size: 20px;
     font-weight: 400; } }
 /* SLIDE 1 STYLES */
-@media only screen and (min-width: 1200px) {
-  .skills-row {
+.skills-header,
+.skills-subheader,
+.skills2-header,
+.skills-paragraph {
+  margin: 0 0; }
+
+@media only screen and (max-width: 992px) {
+  .skills-header-row {
+    padding-top: 30px; }
+
+  .skills-header {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 90px;
+    font-weight: 600;
+    line-height: 1; }
+
+  .skills-subheader {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 45px;
+    font-weight: 400;
+    line-height: 1; }
+
+  .skills2-header {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 75px;
+    font-weight: 600;
+    line-height: 1; }
+
+  .skills-paragraph {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 1.9;
+    padding-top: 30px; }
+
+  .myskills {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    margin: 0 auto; }
+
+  .skills-container {
+    width: 100%;
+    height: 350px;
+    position: relative;
+    text-align: center; }
+
+  .skill-icon {
+    width: 125px;
+    height: 125px;
+    padding-left: 15px;
+    padding-right: 15px; }
+
+  .skill-muted {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    opacity: 0.55;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0; } }
+@media only screen and (max-width: 450px) {
+  .skills-header {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 75px;
+    font-weight: 600;
+    line-height: 1; }
+
+  .skills-subheader {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 1; }
+
+  .skills2-header {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 1; }
+
+  .skills-paragraph {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.9;
+    padding-top: 30px; }
+
+  .myskills {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    margin: 0 auto; }
+
+  .skills-container {
+    width: 100%;
+    height: 400px; }
+
+  .skill-icon {
+    width: 85px;
+    height: 85px; }
+
+  .skill-muted {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    opacity: 0.55;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0; } }
+@media only screen and (max-width: 359px) {
+  .skills-header-row {
+    padding-top: 15px; }
+
+  .skills-header {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 1; }
+
+  .skills-subheader {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1; }
+
+  .skills2-header {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 45px;
+    font-weight: 600;
+    line-height: 1; }
+
+  .myskills {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    margin: 0 auto; }
+
+  .skill-icon {
+    width: 75px;
+    height: 75px; }
+
+  .skill-muted {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    opacity: 0.55;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0; } }
+@media only screen and (min-width: 993px) {
+  .skills-header-row {
     padding-top: 45px; }
 
   .skills-header {
     font-family: 'Titillium Web', sans-serif;
+    font-size: 90px;
+    font-weight: 600;
+    line-height: 1; }
+
+  .skills-subheader {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 45px;
+    font-weight: 400;
+    line-height: 1; }
+
+  .skills2-header {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 75px;
+    font-weight: 600;
+    line-height: 1; }
+
+  .skills-paragraph {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 1.9; }
+
+  .myskills {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    margin: 0 auto; }
+
+  .skills-container {
+    width: 100%;
+    height: 350px;
+    position: relative; }
+
+  .skill-icon {
+    width: 100px;
+    height: 100px; }
+
+  .html {
+    position: absolute;
+    top: 0;
+    left: 0; }
+
+  .css {
+    position: absolute;
+    top: 0;
+    right: 0; }
+
+  .js {
+    position: absolute;
+    bottom: 0;
+    left: 0; }
+
+  .tools {
+    position: absolute;
+    bottom: 0;
+    right: 0; }
+
+  .skill-description {
+    padding-left: 150px;
+    padding-right: 150px;
+    width: 100%; }
+
+  .skill-muted {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    opacity: 0.55;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0; } }
+@media only screen and (min-width: 1200px) {
+  .skills-header {
+    font-family: 'Titillium Web', sans-serif;
     font-size: 120px;
     font-weight: 600;
-    line-height: 0.9;
-    margin: 0 0; }
+    line-height: 0.9; }
 
   .skills-subheader {
     font-family: 'Titillium Web', sans-serif;
     font-size: 60px;
     font-weight: 400;
-    line-height: 0.9;
-    margin: 0 0; }
+    line-height: 0.9; }
 
   .skills2-header {
     font-family: 'Titillium Web', sans-serif;
     font-size: 90px;
     font-weight: 600;
-    line-height: 0.9;
-    margin: 0 0; }
+    line-height: 0.9; }
 
   .skills-paragraph {
     font-family: 'Titillium Web', sans-serif;
     font-size: 26px;
     font-weight: 300;
-    line-height: 1.9;
-    margin: 0 0; } }
+    line-height: 1.9; }
+
+  .myskills {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 45px;
+    font-weight: 600;
+    padding-top: 90px;
+    padding-bottom: 45px;
+    margin: 0 auto; }
+
+  .skills-container {
+    width: 100%;
+    height: 450px;
+    position: relative; }
+
+  .skill-icon {
+    width: 150px;
+    height: 150px; }
+
+  .skill-description {
+    padding-left: 200px;
+    padding-right: 200px;
+    width: 100%; }
+
+  .skill-muted {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    opacity: 0.55;
+    text-align: center; } }
 /* SLIDE 2 STYLES */
 #miu {
   background-image: url("../../img/miuestetic.png"); }
@@ -2363,6 +2618,9 @@ html, body {
 .wrapper {
   overflow-x: hidden; }
 
+.overflow-y {
+  overflow-y: hidden; }
+
 #slide0 {
   float: left;
   display: block;
@@ -2395,7 +2653,7 @@ html, body {
 
 /* SLIDE 1 STYLES */
 #slide2 {
-  background-color: blue; }
+  background-color: #fff; }
 
 #slide3 {
   background-color: #fff; }

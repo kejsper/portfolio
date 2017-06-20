@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200px" height="200px" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>css_bw</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Kacpi" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="css_bw">
+            <rect id="Rectangle-2" x="12" y="11" width="175" height="176"></rect>
+            <polygon id="Path-3" fill-opacity="0.1" fill="#000000" points="137.150391 187.578125 60.2851562 113.277344 64.1542969 89.3203125 82.8737793 85.8032227 95.7797852 85.8295898 113.621582 86.1196289 145.564209 85.9912109 197.380859 136.270508 193.802734 176.94043 179.087891 191.207031"></polygon>
+            <rect id="Rectangle" stroke="#171717" stroke-width="15" x="7.5" y="7.5" width="185" height="185" rx="30"></rect>
+            <text id="css" font-family="OpenSans-Extrabold, Open Sans" font-size="60" font-weight="600" fill="#000000">
+                <tspan x="52" y="117">css</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

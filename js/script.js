@@ -9,13 +9,16 @@ $(document).ready(function() {
   whichSlide = 0;
 
   windowSize ();
+  /*overflowSlide();*/
   $(window).on('resize', function () {
     setTimeout(windowSize, 500);
   });
 
   function windowSize () {
     height = $(window).height();
+    /* if dla scrolli? */
     width = $(window).width();
+
     $('.wrapper').css('height', height).css('width', width);
     slider.css('height', height).css('width', width*howManySlides);
     intro1.css('height', height).css('width', width);
@@ -25,6 +28,12 @@ $(document).ready(function() {
     $('.slide-main').css('height', height).css('width', width);
     if (whichSlide > 1) {
       slider.css('margin-left', -(width*(whichSlide-1)));
+    }
+  }
+
+  function overflowSlide() {
+    if (whichSlide===0) {
+      $('.wrapper').addClass('overflow-y');
     }
   }
 
