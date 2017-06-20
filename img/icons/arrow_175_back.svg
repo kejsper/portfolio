@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="2112.791 2541.053 189.209 13.894">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: #000;
+        stroke-linecap: square;
+        stroke-width: 6px;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <g id="arrow_175" transform="translate(1990 1176)">
+    <g id="arrow_175-2" data-name="arrow_175" transform="translate(297.5 1380) rotate(180)">
+      <g id="arrow_175-3" data-name="arrow_175">
+        <path id="Line" class="cls-1" d="M-11.5,8h175"/>
+        <path id="Line-decoration-1" class="cls-1" d="M163.5,8,152.7,5v6Z"/>
+      </g>
+    </g>
+  </g>
+</svg>

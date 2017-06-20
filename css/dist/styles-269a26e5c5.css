@@ -1730,6 +1730,9 @@ html {
     font-size: 20px;
     font-weight: 400; } }
 /* SLIDE 1 STYLES */
+.skills-row {
+  padding-bottom: 65px; }
+
 .skills-header,
 .skills-subheader,
 .skills2-header,
@@ -1923,7 +1926,7 @@ html {
 
   .skills-container {
     width: 100%;
-    height: 350px;
+    height: 300px;
     position: relative; }
 
   .skill-icon {
@@ -1998,7 +2001,7 @@ html {
 
   .skills-container {
     width: 100%;
-    height: 450px;
+    height: 400px;
     position: relative; }
 
   .skill-icon {
@@ -2510,7 +2513,17 @@ html {
     font-size: 22px;
     font-weight: 600;
     line-height: 2;
-    margin: 0 0; } }
+    margin: 0 0; }
+
+  .form-label {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 22px;
+    font-weight: 400; }
+
+  .form-submit {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 24px;
+    font-weight: 600; } }
 @media only screen and (max-width: 375px) {
   .contact-header {
     font-family: 'Titillium Web', sans-serif;
@@ -2538,7 +2551,17 @@ html {
     font-size: 16px;
     font-weight: 300;
     color: #95989A;
-    margin: -10px auto 0 -40px; } }
+    margin: -10px auto 0 -40px; }
+
+  .form-label {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 18px;
+    font-weight: 400; }
+
+  .form-submit {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 20px;
+    font-weight: 600; } }
 @media only screen and (min-width: 993px) {
   .contact-row {
     padding-top: 45px; }
@@ -2611,15 +2634,103 @@ html {
 @media only screen and (min-width: 1000px) and (min-height: 1000px) and (orientation: portrait) {
   .contact-row {
     padding-top: 210px; } }
+/* navigation styles */
+.nav-bar {
+  position: fixed;
+  z-index: 3;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  border-top: 1px solid lightgrey;
+  margin-right: 0;
+  margin-left: 0; }
+
+.but-back {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-end;
+  height: 100%;
+  cursor: pointer; }
+
+.but-next {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  cursor: pointer; }
+
+.arrow-back {
+  background-image: url("../../img/icons/arrow_175_back.svg");
+  background-repeat: no-repeat;
+  background-size: contain; }
+
+.arrow-next {
+  background-image: url("../../img/icons/arrow_175.svg");
+  background-repeat: no-repeat;
+  background-size: contain; }
+
+@media only screen and (max-width: 992px) {
+  .nav-bar {
+    height: 45px; }
+
+  .nav-text {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 0.8; }
+
+  .arrow-back {
+    width: 140px;
+    height: 16px; }
+
+  .arrow-next {
+    width: 140px;
+    height: 16px; } }
+@media only screen and (max-width: 450px) {
+  .nav-bar {
+    height: 45px; }
+
+  .nav-text {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 0.8; }
+
+  .arrow-back {
+    width: 90px;
+    height: 16px; }
+
+  .arrow-next {
+    width: 90px;
+    height: 16px; } }
+@media only screen and (min-width: 993px) {
+  .nav-bar {
+    height: 60px; }
+
+  .nav-text {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 0.8; }
+
+  .arrow-back {
+    width: 140px;
+    height: 16px; }
+
+  .arrow-next {
+    width: 140px;
+    height: 16px; } }
 html, body {
   padding: 0;
   margin: 0; }
 
 .wrapper {
-  overflow-x: hidden; }
+  overflow: hidden; }
 
 .overflow-y {
-  overflow-y: hidden; }
+  overflow-y: scroll; }
 
 #slide0 {
   float: left;
@@ -2651,40 +2762,11 @@ html, body {
 #slide1 {
   background-color: #fff; }
 
-/* SLIDE 1 STYLES */
 #slide2 {
   background-color: #fff; }
 
 #slide3 {
   background-color: #fff; }
 
-/*
-.next {
-  position: fixed;
-  z-index: 100;
-  top: 50%;
-  right: 30px;
-  width: 50px;
-  height: 50px;
-  transform:translateY(-25px);
-  cursor: pointer;
-
-}
-
-i.navigation {
-  font-size: 40px;
-  transform:scaleX(1.2);
-}
-
-.back {
-  position: fixed;
-  z-index: 100;
-  top: 50%;
-  left: 30px;
-  width: 50px;
-  height: 50px;
-  transform:translateY(-25px);
-  visibility: hidden;
-  cursor: pointer;
-}
-*/
+.pad-bot {
+  padding-bottom: 60px; }

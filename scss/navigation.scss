@@ -1,0 +1,101 @@
+/* navigation styles */
+
+.nav-bar {
+  position: fixed;
+  z-index: 3;
+  left: 0;
+  bottom: 0;
+  width:100%;
+  background-color: white;
+  border-top: 1px solid lightgrey;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.but-back {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-end;
+  height: 100%;
+  cursor: pointer;
+}
+.but-next {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  cursor: pointer;
+}
+
+.arrow-back {
+  background-image: url('../../img/icons/arrow_175_back.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.arrow-next {
+  background-image: url('../../img/icons/arrow_175.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@media only screen and (max-width: 992px) {
+  .nav-bar {
+    height: 45px;
+  }
+  .nav-text {
+    @include font-header(16px, 400);
+    line-height: 0.8;
+  }
+  .arrow-back {
+    width: 140px;
+    height: 16px;
+  }
+
+  .arrow-next {
+    width: 140px;
+    height: 16px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .nav-bar {
+    height: 45px;
+  }
+  .nav-text {
+    @include font-header(14px, 400);
+    line-height: 0.8;
+  }
+
+  .arrow-back {
+    width: 90px;
+    height: 16px;
+  }
+
+  .arrow-next {
+    width: 90px;
+    height: 16px;
+  }
+}
+
+@media only screen and (min-width:993px) {
+  .nav-bar {
+    height: 60px;
+  }
+
+  .nav-text {
+    @include font-header(20px, 400);
+    line-height: 0.8;
+  }
+  .arrow-back {
+    width: 140px;
+    height: 16px;
+  }
+
+  .arrow-next {
+    width: 140px;
+    height: 16px;
+  }
+
+}

@@ -8,6 +8,7 @@
 @import 'slide1';
 @import 'slide2';
 @import 'slide4';
+@import 'navigation';
 
 html, body {
   padding: 0;
@@ -15,12 +16,12 @@ html, body {
 }
 
 .wrapper {
-  overflow-x: hidden;
-  
+  overflow: hidden;
+
 }
 
 .overflow-y {
-  overflow-y:hidden;
+  overflow-y:scroll;
 }
 
 #slide0 {
@@ -32,13 +33,13 @@ html, body {
   z-index: 5;
   margin-top: 0;
   padding-top: 0;
-
 }
 
 .intro-wrapper {
   overflow: hidden;
   margin-top: 0;
   padding-top: 0;
+
 }
 
 .intro1 {
@@ -47,16 +48,12 @@ html, body {
   padding-top: 0;
 }
 
-
-
-
 .slide {
   float: left;
   display: block;
   z-index: 1;
   position: relative;
   top:0;
-
 }
 
 #slide1 {
@@ -64,48 +61,14 @@ html, body {
 
 }
 
-/* SLIDE 1 STYLES */
-
-
-
-
 #slide2 {
   background-color: #fff;
-
 }
 
 #slide3 {
   background-color: #fff;
-
 }
 
-/*
-.next {
-  position: fixed;
-  z-index: 100;
-  top: 50%;
-  right: 30px;
-  width: 50px;
-  height: 50px;
-  transform:translateY(-25px);
-  cursor: pointer;
-
+.pad-bot {
+  padding-bottom: 60px;
 }
-
-i.navigation {
-  font-size: 40px;
-  transform:scaleX(1.2);
-}
-
-.back {
-  position: fixed;
-  z-index: 100;
-  top: 50%;
-  left: 30px;
-  width: 50px;
-  height: 50px;
-  transform:translateY(-25px);
-  visibility: hidden;
-  cursor: pointer;
-}
-*/
