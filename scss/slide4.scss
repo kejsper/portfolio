@@ -8,6 +8,8 @@
 .form-text {
   width: 100%;
   height: 30px;
+  box-shadow: none !important;
+  background-clip: padding-box;
   border: 1px solid #C8C6C6;
   border-radius: 5px;
   margin-top: 5px;
@@ -21,6 +23,8 @@
 
 .form-textarea {
   width: 100%;
+  box-shadow: none !important;
+  background-clip: padding-box;
   border: 1px solid #C8C6C6;
   border-radius: 10px;
   margin-top: 5px;
@@ -47,7 +51,7 @@
     padding-top: 45px;
   }
   .contact-header {
-    @include font-header(120px, 600);
+    @include font-header(65px, 600);
     line-height: 1;
     margin: 0 0 30px 0;
   }
@@ -100,7 +104,7 @@
 
 @media only screen and (max-width: 500px) {
   .contact-header {
-    @include font-header(90px, 600);
+    @include font-header(50px, 600);
     line-height: 1;
     margin: 0 0 20px 0;
   }
@@ -124,7 +128,7 @@
 
 @media only screen and (max-width: 375px) {
   .contact-header {
-    @include font-header(75px, 600);
+    @include font-header(40px, 600);
     line-height: 1;
     margin: 0 0 20px 0;
   }
@@ -156,7 +160,7 @@
     padding-top: 45px;
   }
   .contact-header {
-    @include font-header(120px, 600);
+    @include font-header(65px, 600);
     line-height: 1;
     margin: 0 0 30px 0;
   }

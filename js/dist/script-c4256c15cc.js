@@ -19,8 +19,13 @@ $(document).ready(function() {
   });
 
   function windowSize () {
-    height = $(window).outerHeight();
-    width = $(window).outerWidth();
+    height = $(window).height();
+    width = window.outerWidth;
+    if (width===0) {
+      width = document.body.getBoundingClientRect().width;
+    }
+    console.log('width '+width);
+    console.log('height '+height);
     $('.wrapper').css('height', height).css('width', width);
     slider.css('height', height).css('width', width*howManySlides);
     intro1.css('height', height).css('width', width);
@@ -30,11 +35,11 @@ $(document).ready(function() {
     if (whichSlide > 1) {
       slider.css('margin-left', -(width*(whichSlide-1)));
     }
-    overflow();
+    overflow(height);
+
   }
 
-  function overflow() {
-    height = $(window).outerHeight();
+  function overflow(height) {
     if (slide1height>height) {
       $('#slide1').addClass('overflow-y');
     } else {
