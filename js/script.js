@@ -13,13 +13,14 @@ $(document).ready(function() {
   whichSlide = 0;
 
   windowSize ();
+
   $(window).on('resize', function () {
-    setTimeout(windowSize, 500);
+    windowSize();
   });
 
   function windowSize () {
-    height = $(window).height();
-    width = $(window).outerWidth(true);
+    height = $(window).outerHeight();
+    width = $(window).outerWidth();
     $('.wrapper').css('height', height).css('width', width);
     slider.css('height', height).css('width', width*howManySlides);
     intro1.css('height', height).css('width', width);
@@ -29,16 +30,25 @@ $(document).ready(function() {
     if (whichSlide > 1) {
       slider.css('margin-left', -(width*(whichSlide-1)));
     }
-    if (whichSlide!==0) {
-      if (slide1height>height) {
-        $('#slide1').addClass('overflow-y');
-      }
-      if (slide2height>height) {
-        $('#slide2').addClass('overflow-y');
-      }
-      if (slide3height>height) {
-        $('#slide3').addClass('overflow-y');
-      }
+    overflow();
+  }
+
+  function overflow() {
+    height = $(window).outerHeight();
+    if (slide1height>height) {
+      $('#slide1').addClass('overflow-y');
+    } else {
+      $('#slide1').removeClass('overflow-y');
+    }
+    if (slide2height>height) {
+      $('#slide2').addClass('overflow-y');
+    } else {
+      $('#slide2').removeClass('overflow-y');
+    }
+    if (slide3height>height) {
+      $('#slide3').addClass('overflow-y');
+    } else {
+      $('#slide3').removeClass('overflow-y');
     }
   }
 
@@ -50,13 +60,13 @@ $(document).ready(function() {
       });
 
       whichSlide = whichSlide+1;
-      windowSize();
+      /*windowSize();*/
       back.css('visibility', 'visible');
     }
     else if (whichSlide > 0 && whichSlide < howManySlides) {
       slider.animate({marginLeft: -(whichSlide * margin)});
       whichSlide = whichSlide + 1;
-      windowSize();
+      /*windowSize();*/
       if ((whichSlide + 1)===howManySlides){
         next.css('visibility', 'hidden');
       }
