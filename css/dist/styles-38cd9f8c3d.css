@@ -1494,7 +1494,7 @@ html {
     background-size: contain; } }
 @media only screen and (max-width: 800px) {
   .hello {
-    padding-left: 115px;
+    padding-left: 100px;
     padding-top: 45px; }
 
   .forward {
@@ -1558,6 +1558,16 @@ html {
     background-image: url("../../img/icons/arrow_330.svg");
     background-size: contain;
     background-repeat: no-repeat; } }
+@media only screen and (max-width: 700px) {
+  .hello {
+    padding-left: 60px;
+    padding-top: 15px; }
+
+  .forward {
+    position: absolute;
+    bottom: 15px;
+    right: 20px;
+    cursor: pointer; } }
 @media only screen and (max-width: 550px) {
   .hello-header {
     font-family: "Titillium Web", sans-serif;
@@ -1788,6 +1798,26 @@ html {
     padding-left: 15px;
     padding-right: 15px; }
 
+  .skill-description-start {
+    display: block;
+    width: 100%; }
+
+  .skill-description-html {
+    display: none;
+    width: 100%; }
+
+  .skill-description-css {
+    display: none;
+    width: 100%; }
+
+  .skill-description-js {
+    display: none;
+    width: 100%; }
+
+  .skill-description-tools {
+    display: none;
+    width: 100%; }
+
   .skill-muted {
     font-family: 'Titillium Web', sans-serif;
     font-size: 22px;
@@ -1953,7 +1983,32 @@ html {
     bottom: 0;
     right: 0; }
 
-  .skill-description {
+  .skill-description-start {
+    display: block;
+    padding-left: 150px;
+    padding-right: 150px;
+    width: 100%; }
+
+  .skill-description-html {
+    display: none;
+    padding-left: 150px;
+    padding-right: 150px;
+    width: 100%; }
+
+  .skill-description-css {
+    display: none;
+    padding-left: 150px;
+    padding-right: 150px;
+    width: 100%; }
+
+  .skill-description-js {
+    display: none;
+    padding-left: 150px;
+    padding-right: 150px;
+    width: 100%; }
+
+  .skill-description-tools {
+    display: none;
     padding-left: 150px;
     padding-right: 150px;
     width: 100%; }
@@ -2008,7 +2063,32 @@ html {
     width: 150px;
     height: 150px; }
 
-  .skill-description {
+  .skill-description-start {
+    display: block;
+    padding-left: 200px;
+    padding-right: 200px;
+    width: 100%; }
+
+  .skill-description-html {
+    display: none;
+    padding-left: 200px;
+    padding-right: 200px;
+    width: 100%; }
+
+  .skill-description-css {
+    display: none;
+    padding-left: 200px;
+    padding-right: 200px;
+    width: 100%; }
+
+  .skill-description-js {
+    display: none;
+    padding-left: 200px;
+    padding-right: 200px;
+    width: 100%; }
+
+  .skill-description-tools {
+    display: none;
     padding-left: 200px;
     padding-right: 200px;
     width: 100%; }
@@ -2021,10 +2101,10 @@ html {
     text-align: center; } }
 /* SLIDE 2 STYLES */
 #miu {
-  background-image: url("../../img/miuestetic.png"); }
+  background-image: url("../../img/miuestetic.jpg"); }
 
 #nufcblog {
-  background-image: url("../../img/nufcblog.png"); }
+  background-image: url("../../img/nufcblog.jpg"); }
 
 .site-link {
   color: #000;
@@ -2531,7 +2611,7 @@ html {
 @media only screen and (max-width: 375px) {
   .contact-header {
     font-family: 'Titillium Web', sans-serif;
-    font-size: 40px;
+    font-size: 35px;
     font-weight: 600;
     line-height: 1;
     margin: 0 0 20px 0; }
@@ -2572,7 +2652,7 @@ html {
 
   .contact-header {
     font-family: 'Titillium Web', sans-serif;
-    font-size: 65px;
+    font-size: 60px;
     font-weight: 600;
     line-height: 1;
     margin: 0 0 30px 0; }

@@ -128,7 +128,7 @@
 
 @media only screen and (max-width: 375px) {
   .contact-header {
-    @include font-header(40px, 600);
+    @include font-header(35px, 600);
     line-height: 1;
     margin: 0 0 20px 0;
   }
@@ -160,7 +160,7 @@
     padding-top: 45px;
   }
   .contact-header {
-    @include font-header(65px, 600);
+    @include font-header(60px, 600);
     line-height: 1;
     margin: 0 0 30px 0;
   }

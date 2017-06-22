@@ -24,8 +24,6 @@ $(document).ready(function() {
     if (width===0) {
       width = document.body.getBoundingClientRect().width;
     }
-    console.log('width '+width);
-    console.log('height '+height);
     $('.wrapper').css('height', height).css('width', width);
     slider.css('height', height).css('width', width*howManySlides);
     intro1.css('height', height).css('width', width);
@@ -112,4 +110,10 @@ $(document).ready(function() {
         $('#nav-back').html('moje prace');
     }
   }
+
+  $('.skill-icon').on('click', function() {
+    clickedIcon = $(this).attr('id');
+    $('.skill-description-container').find('.active').fadeOut(1).removeClass('active');
+    $('.skill-description-'+clickedIcon).fadeIn(700).addClass('active');
+  });
 });

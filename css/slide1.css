@@ -57,6 +57,26 @@
     padding-left: 15px;
     padding-right: 15px; }
 
+  .skill-description-start {
+    display: block;
+    width: 100%; }
+
+  .skill-description-html {
+    display: none;
+    width: 100%; }
+
+  .skill-description-css {
+    display: none;
+    width: 100%; }
+
+  .skill-description-js {
+    display: none;
+    width: 100%; }
+
+  .skill-description-tools {
+    display: none;
+    width: 100%; }
+
   .skill-muted {
     font-family: 'Titillium Web', sans-serif;
     font-size: 22px;
@@ -222,7 +242,32 @@
     bottom: 0;
     right: 0; }
 
-  .skill-description {
+  .skill-description-start {
+    display: block;
+    padding-left: 150px;
+    padding-right: 150px;
+    width: 100%; }
+
+  .skill-description-html {
+    display: none;
+    padding-left: 150px;
+    padding-right: 150px;
+    width: 100%; }
+
+  .skill-description-css {
+    display: none;
+    padding-left: 150px;
+    padding-right: 150px;
+    width: 100%; }
+
+  .skill-description-js {
+    display: none;
+    padding-left: 150px;
+    padding-right: 150px;
+    width: 100%; }
+
+  .skill-description-tools {
+    display: none;
     padding-left: 150px;
     padding-right: 150px;
     width: 100%; }
@@ -277,7 +322,32 @@
     width: 150px;
     height: 150px; }
 
-  .skill-description {
+  .skill-description-start {
+    display: block;
+    padding-left: 200px;
+    padding-right: 200px;
+    width: 100%; }
+
+  .skill-description-html {
+    display: none;
+    padding-left: 200px;
+    padding-right: 200px;
+    width: 100%; }
+
+  .skill-description-css {
+    display: none;
+    padding-left: 200px;
+    padding-right: 200px;
+    width: 100%; }
+
+  .skill-description-js {
+    display: none;
+    padding-left: 200px;
+    padding-right: 200px;
+    width: 100%; }
+
+  .skill-description-tools {
+    display: none;
     padding-left: 200px;
     padding-right: 200px;
     width: 100%; }

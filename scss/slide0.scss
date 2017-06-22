@@ -105,7 +105,7 @@
 
 @media only screen and (max-width: 800px) {
   .hello {
-    padding-left: 115px;
+    padding-left: 100px;
     padding-top: 45px;
   }
   .forward {
@@ -178,6 +178,19 @@
     background-image: url('../../img/icons/arrow_330.svg');
     background-size: contain;
     background-repeat: no-repeat;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .hello {
+    padding-left: 60px;
+    padding-top: 15px;
+  }
+  .forward {
+    position: absolute;
+    bottom: 15px;
+    right: 20px;
+    cursor: pointer;
   }
 }
 
