@@ -8,6 +8,9 @@
 .skills-paragraph {
   margin: 0 0; }
 
+.skill-icon {
+  cursor: pointer; }
+
 @media only screen and (max-width: 992px) {
   .skills-header-row {
     padding-top: 30px; }
@@ -113,9 +116,9 @@
 
   .myskills {
     font-family: 'Titillium Web', sans-serif;
-    font-size: 32px;
+    font-size: 24px;
     font-weight: 600;
-    padding-top: 60px;
+    padding-top: 35px;
     padding-bottom: 30px;
     margin: 0 auto; }
 
@@ -216,7 +219,8 @@
   .skills-container {
     width: 100%;
     height: 300px;
-    position: relative; }
+    position: relative;
+    margin: 0 auto; }
 
   .skill-icon {
     width: 100px;
@@ -279,7 +283,16 @@
     opacity: 0.55;
     text-align: center;
     margin-top: 0;
-    margin-bottom: 0; } }
+    margin-bottom: 0; }
+
+  .skill-normal {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 22px;
+    font-weight: 300;
+    text-align: justify;
+    margin-top: 0;
+    margin-bottom: 15px;
+    line-height: 1.5; } }
 @media only screen and (min-width: 1200px) {
   .skills-header {
     font-family: 'Titillium Web', sans-serif;
@@ -314,9 +327,10 @@
     margin: 0 auto; }
 
   .skills-container {
-    width: 100%;
+    width: 90%;
     height: 400px;
-    position: relative; }
+    position: relative;
+    margin: 0 auto; }
 
   .skill-icon {
     width: 150px;
@@ -324,32 +338,32 @@
 
   .skill-description-start {
     display: block;
-    padding-left: 200px;
-    padding-right: 200px;
+    padding-left: 225px;
+    padding-right: 225px;
     width: 100%; }
 
   .skill-description-html {
     display: none;
-    padding-left: 200px;
-    padding-right: 200px;
+    padding-left: 225px;
+    padding-right: 225px;
     width: 100%; }
 
   .skill-description-css {
     display: none;
-    padding-left: 200px;
-    padding-right: 200px;
+    padding-left: 225px;
+    padding-right: 225px;
     width: 100%; }
 
   .skill-description-js {
     display: none;
-    padding-left: 200px;
-    padding-right: 200px;
+    padding-left: 225px;
+    padding-right: 225px;
     width: 100%; }
 
   .skill-description-tools {
     display: none;
-    padding-left: 200px;
-    padding-right: 200px;
+    padding-left: 225px;
+    padding-right: 225px;
     width: 100%; }
 
   .skill-muted {

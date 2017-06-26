@@ -46,6 +46,23 @@
   margin: 0 auto;
 }
 
+
+.alert {
+  @include font-header(12px, 400);
+  color: red;
+  text-transform: uppercase;
+}
+
+.alert-name {
+  display: none;
+}
+.alert-email {
+  display: none;
+}
+.alert-message {
+  display: none;
+}
+
 @media only screen and (max-width: 992px) {
   .contact-row {
     padding-top: 45px;

@@ -1749,6 +1749,9 @@ html {
 .skills-paragraph {
   margin: 0 0; }
 
+.skill-icon {
+  cursor: pointer; }
+
 @media only screen and (max-width: 992px) {
   .skills-header-row {
     padding-top: 30px; }
@@ -1854,9 +1857,9 @@ html {
 
   .myskills {
     font-family: 'Titillium Web', sans-serif;
-    font-size: 32px;
+    font-size: 24px;
     font-weight: 600;
-    padding-top: 60px;
+    padding-top: 35px;
     padding-bottom: 30px;
     margin: 0 auto; }
 
@@ -1957,7 +1960,8 @@ html {
   .skills-container {
     width: 100%;
     height: 300px;
-    position: relative; }
+    position: relative;
+    margin: 0 auto; }
 
   .skill-icon {
     width: 100px;
@@ -2020,7 +2024,16 @@ html {
     opacity: 0.55;
     text-align: center;
     margin-top: 0;
-    margin-bottom: 0; } }
+    margin-bottom: 0; }
+
+  .skill-normal {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 22px;
+    font-weight: 300;
+    text-align: justify;
+    margin-top: 0;
+    margin-bottom: 15px;
+    line-height: 1.5; } }
 @media only screen and (min-width: 1200px) {
   .skills-header {
     font-family: 'Titillium Web', sans-serif;
@@ -2055,9 +2068,10 @@ html {
     margin: 0 auto; }
 
   .skills-container {
-    width: 100%;
+    width: 90%;
     height: 400px;
-    position: relative; }
+    position: relative;
+    margin: 0 auto; }
 
   .skill-icon {
     width: 150px;
@@ -2065,32 +2079,32 @@ html {
 
   .skill-description-start {
     display: block;
-    padding-left: 200px;
-    padding-right: 200px;
+    padding-left: 225px;
+    padding-right: 225px;
     width: 100%; }
 
   .skill-description-html {
     display: none;
-    padding-left: 200px;
-    padding-right: 200px;
+    padding-left: 225px;
+    padding-right: 225px;
     width: 100%; }
 
   .skill-description-css {
     display: none;
-    padding-left: 200px;
-    padding-right: 200px;
+    padding-left: 225px;
+    padding-right: 225px;
     width: 100%; }
 
   .skill-description-js {
     display: none;
-    padding-left: 200px;
-    padding-right: 200px;
+    padding-left: 225px;
+    padding-right: 225px;
     width: 100%; }
 
   .skill-description-tools {
     display: none;
-    padding-left: 200px;
-    padding-right: 200px;
+    padding-left: 225px;
+    padding-right: 225px;
     width: 100%; }
 
   .skill-muted {
@@ -2114,6 +2128,9 @@ html {
 
 .site-technology-list {
   list-style-type: circle; }
+
+.site-technology-item {
+  text-align: left; }
 
 @media only screen and (min-width: 992px) {
   .work-row-header {
@@ -2515,6 +2532,22 @@ html {
   padding: 10px 60px 10px 60px;
   margin: 0 auto; }
 
+.alert {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: red;
+  text-transform: uppercase; }
+
+.alert-name {
+  display: none; }
+
+.alert-email {
+  display: none; }
+
+.alert-message {
+  display: none; }
+
 @media only screen and (max-width: 992px) {
   .contact-row {
     padding-top: 45px; }
@@ -2806,6 +2839,24 @@ html {
   .arrow-next {
     width: 140px;
     height: 16px; } }
+.modal-background {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%; }
+
+.modal-container {
+  background-color: #fff;
+  width: 50%;
+  height: 50%;
+  border-radius: 20px; }
+
 html, body {
   padding: 0;
   margin: 0; }

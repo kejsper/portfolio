@@ -29,7 +29,7 @@ gulp.task('sass', function() {
 });
 
 gulp.task('livereload', function() {
-  gulp.src('index.html')
+  gulp.src('index.php')
   .pipe(livereload());
 
 });
@@ -57,7 +57,7 @@ gulp.task('assemble', ['sass'], function() {
 gulp.task('index', ['assemble', 'jsHash'], function() {
   jsonCss = JSON.parse(fs.readFileSync('./css/dist/rev-manifest.json'));
   jsonJs = JSON.parse(fs.readFileSync('./js/dist/rev-manifest.json'));
-  var target = gulp.src('./index.html');
+  var target = gulp.src('./index.php');
   var source = gulp.src(['./js/dist/' + jsonJs['script.js'], './css/dist/' + jsonCss['styles.css']], {read: false});
   return target.pipe(inject(source, {relative: true}))
     .pipe(gulp.dest(''));
@@ -72,5 +72,5 @@ gulp.task('watch', function() {
   livereload.listen();
   gulp.watch('scss/**/*.scss', ['delete']);
   gulp.watch('js/script.js', ['delete']);
-  gulp.watch('index.html', ['livereload']);
+  gulp.watch('index.php', ['livereload']);
 });

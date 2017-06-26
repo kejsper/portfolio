@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="821 314 195 195">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f16529;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #171717;
+        stroke-width: 10px;
+      }
+
+      .cls-3 {
+        font-size: 60px;
+        font-family: OpenSans-Extrabold, Open Sans;
+        font-weight: 800;
+      }
+    </style>
+  </defs>
+  <g id="html" transform="translate(818.5 311.5)">
+    <g id="html-2" data-name="html">
+      <rect id="Rectangle-2" class="cls-1" width="175" height="176" transform="translate(12 11)"/>
+      <rect id="Rectangle" class="cls-2" width="185" height="185" rx="30" transform="translate(7.5 7.5)"/>
+      <text id="html-3" data-name="html" class="cls-3" transform="translate(26 117)"><tspan x="0" y="0">html</tspan></text>
+    </g>
+  </g>
+</svg>

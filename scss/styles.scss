@@ -9,6 +9,7 @@
 @import 'slide2';
 @import 'slide4';
 @import 'navigation';
+@import 'modal';
 
 html, body {
   padding: 0;
@@ -68,6 +69,7 @@ html, body {
 #slide3 {
   background-color: #fff;
 }
+
 
 .pad-bot {
   padding-bottom: 60px;

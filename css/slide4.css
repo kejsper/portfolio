@@ -40,6 +40,22 @@
   padding: 10px 60px 10px 60px;
   margin: 0 auto; }
 
+.alert {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: red;
+  text-transform: uppercase; }
+
+.alert-name {
+  display: none; }
+
+.alert-email {
+  display: none; }
+
+.alert-message {
+  display: none; }
+
 @media only screen and (max-width: 992px) {
   .contact-row {
     padding-top: 45px; }

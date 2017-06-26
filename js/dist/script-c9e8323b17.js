@@ -13,14 +13,18 @@ $(document).ready(function() {
   whichSlide = 0;
 
   windowSize ();
+  swipeForMobile()
 
+  //controls window size and adjust page to window
   $(window).on('resize', function () {
     windowSize();
   });
 
+  // setting div sizes according to window size
   function windowSize () {
     height = $(window).height();
     width = window.outerWidth;
+    // iOS fix for outerWidth bug
     if (width===0) {
       width = document.body.getBoundingClientRect().width;
     }
@@ -37,6 +41,7 @@ $(document).ready(function() {
 
   }
 
+  // checks if overflow-y is needed for the slide
   function overflow(height) {
     if (slide1height>height) {
       $('#slide1').addClass('overflow-y');
@@ -55,29 +60,50 @@ $(document).ready(function() {
     }
   }
 
+  //swiping slides for mobile devices
+  function swipeForMobile() {
+    if ('ontouchstart' in window) {
+      $(window).swipe({
+        swipeLeft: function(event, direction, distance, duration, fingerCount, fingerData) {
+          changeSlideNext();
+        },
+        swipeRight: function(event, direction, distance, duration, fingerCount, fingerData) {
+          changeSlideBack();
+        }
+      });
+    }
+  }
+
+  // next button navigation
   next.on('click', function () {
+    changeSlideNext();
+  });
+
+  function changeSlideNext() {
     var margin = $(window).width();
     if (whichSlide === 0) {
       intro1.slideUp(1200).promise().done(function() {
         $('#slide0').css('z-index', '-1');
       });
-
       whichSlide = whichSlide+1;
-      /*windowSize();*/
       back.css('visibility', 'visible');
     }
     else if (whichSlide > 0 && whichSlide < howManySlides) {
       slider.animate({marginLeft: -(whichSlide * margin)});
       whichSlide = whichSlide + 1;
-      /*windowSize();*/
       if ((whichSlide + 1)===howManySlides){
         next.css('visibility', 'hidden');
       }
     }
     editNav(whichSlide);
+  }
+
+  // back button navigation
+  back.on('click', function () {
+    changeSlideBack()
   });
 
-  back.on('click', function () {
+  function changeSlideBack() {
     var margin = $(window).width();
     var realMargin = parseInt(slider.css('margin-left'));
     if(whichSlide === 1) {
@@ -94,8 +120,9 @@ $(document).ready(function() {
       }
     }
     editNav(whichSlide);
-  });
+  }
 
+  // Function that changes navigation headers
   function editNav(whichSlide) {
     switch (whichSlide) {
       case 1:
@@ -111,9 +138,75 @@ $(document).ready(function() {
     }
   }
 
+  // Function that change displayed skills
   $('.skill-icon').on('click', function() {
     clickedIcon = $(this).attr('id');
-    $('.skill-description-container').find('.active').fadeOut(1).removeClass('active');
+    $('.skill-description-container').find('.active').finish().fadeOut(1).removeClass('active');
     $('.skill-description-'+clickedIcon).fadeIn(700).addClass('active');
   });
+
+  // function that validates form
+
+  $('#send-email').on('submit', function(e) {
+    e.preventDefault();
+
+    //clearing alerts
+    $('.alert-name').fadeOut(1);
+    $('.alert-email').fadeOut(1);
+    $('.alert-message').fadeOut(1);
+
+    // getting values from form
+    var form = $(this);
+    firstName = $("input[name='firstName']").val();
+    email = $("input[name='email']").val();
+    message = $("textarea[name='message']").val();
+
+    // validating form data
+    var reg = /^[a-z\d]+[\w\d.-]*@(?:[a-z\d]+[a-z\d-]+\.){1,5}[a-z]{2,6}$/i;
+    if ( (firstName==='') || (message==='') || (reg.test(email) === false)) {
+      if (firstName === '') {
+        $('.alert-name').fadeIn(300);
+      }
+      if (reg.test(email) === false) {
+        $('.alert-email').fadeIn(300);
+      }
+      if (message === '') {
+        $('.alert-message').fadeIn(300);
+      }
+      return;
+    }
+
+
+    // starting ajax
+    $.ajax(
+      {
+      url: 'contactform.php',
+      type: 'post',
+      data: {
+        firstName,
+        email,
+        message
+      },
+      error: function( response ) {
+        console.log(response);
+      },
+      success: function (response) {
+        $('.modal-background').css('display', 'flex').hide().fadeIn(500);
+        $('.modal-container').html(response);
+      }
+      });
+  });
+
+  $('.modal-close').on('click', function() {
+    $('.modal-background').fadeOut(500);
+  });
+
+  $('.modal-background').on('click', function(e) {
+    if(e.target===e.currentTarget) {
+      $('.modal-background').fadeOut(500);
+    }
+  });
+
+
+
 });
