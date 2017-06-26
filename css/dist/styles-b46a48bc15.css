@@ -1828,7 +1828,16 @@ html {
     opacity: 0.55;
     text-align: center;
     margin-top: 20px;
-    margin-bottom: 0; } }
+    margin-bottom: 0; }
+
+  .skill-normal {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: justify;
+    margin-top: 0;
+    margin-bottom: 15px;
+    line-height: 1.5; } }
 @media only screen and (max-width: 450px) {
   .skills-header {
     font-family: 'Titillium Web', sans-serif;
@@ -1878,7 +1887,20 @@ html {
     opacity: 0.55;
     text-align: center;
     margin-top: 20px;
-    margin-bottom: 0; } }
+    margin-bottom: 0; }
+
+  .skill-normal {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: justify;
+    margin-top: 0;
+    margin-bottom: 15px;
+    line-height: 1.5; }
+
+  .skill-description-container {
+    padding-left: 10px;
+    padding-right: 10px; } }
 @media only screen and (max-width: 359px) {
   .skills-header-row {
     padding-top: 15px; }
@@ -1903,7 +1925,7 @@ html {
 
   .myskills {
     font-family: 'Titillium Web', sans-serif;
-    font-size: 28px;
+    font-size: 22px;
     font-weight: 600;
     padding-top: 30px;
     padding-bottom: 10px;
@@ -2852,10 +2874,50 @@ html {
   height: 100%; }
 
 .modal-container {
+  position: relative;
   background-color: #fff;
-  width: 50%;
-  height: 50%;
+  width: 35%;
+  height: 35%;
   border-radius: 20px; }
+
+.modal-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  background-color: white;
+  border: 0;
+  box-shadow: none !important;
+  background-clip: padding-box;
+  cursor: pointer; }
+
+.response {
+  position: absolute;
+  top: 40px;
+  left: 40px; }
+
+.message-header {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 75px;
+  font-weight: 600;
+  color: black;
+  margin: 0 0; }
+
+.message-subheader {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 35px;
+  font-weight: 400;
+  color: black;
+  margin: 0 0; }
+
+.message-paragraph {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  color: black;
+  margin: 0 0; }
 
 html, body {
   padding: 0;

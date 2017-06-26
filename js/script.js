@@ -1,4 +1,5 @@
 $(document).ready(function() {
+
   var intro1 = $('.intro1');
   var intro2 = $('.intro2');
   var slide = $('.slide');
@@ -122,19 +123,27 @@ $(document).ready(function() {
     editNav(whichSlide);
   }
 
+  editNav(whichSlide);
+
   // Function that changes navigation headers
   function editNav(whichSlide) {
     switch (whichSlide) {
+      case 0:
+        $('.nav-descr').css('display', 'none');
+        break;
       case 1:
-        $('#nav-back').html('powitanie');
-        $('#nav-next').html('moje prace');
+        $('.nav-descr').css('display', 'none');
+        $('.nav-hello').css('display', 'inline-block');
+        $('.nav-next-mywork').css('display', 'inline-block');
         break;
       case 2:
-        $('#nav-back').html('umiejętności');
-        $('#nav-next').html('kontakt');
+        $('.nav-descr').css('display', 'none');
+        $('.nav-skills').css('display', 'inline-block');
+        $('.nav-next-contact').css('display', 'inline-block');
         break;
       case 3:
-        $('#nav-back').html('moje prace');
+        $('.nav-descr').css('display', 'none');
+        $('.nav-mywork').css('display', 'inline-block');
     }
   }
 
@@ -160,6 +169,7 @@ $(document).ready(function() {
     firstName = $("input[name='firstName']").val();
     email = $("input[name='email']").val();
     message = $("textarea[name='message']").val();
+    lang = $("input[name='lang']").val();
 
     // validating form data
     var reg = /^[a-z\d]+[\w\d.-]*@(?:[a-z\d]+[a-z\d-]+\.){1,5}[a-z]{2,6}$/i;
@@ -185,14 +195,15 @@ $(document).ready(function() {
       data: {
         firstName,
         email,
-        message
+        message,
+        lang
       },
       error: function( response ) {
         console.log(response);
       },
       success: function (response) {
         $('.modal-background').css('display', 'flex').hide().fadeIn(500);
-        $('.modal-container').html(response);
+        $('.response').html(response);
       }
       });
   });

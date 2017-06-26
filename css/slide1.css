@@ -87,7 +87,16 @@
     opacity: 0.55;
     text-align: center;
     margin-top: 20px;
-    margin-bottom: 0; } }
+    margin-bottom: 0; }
+
+  .skill-normal {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: justify;
+    margin-top: 0;
+    margin-bottom: 15px;
+    line-height: 1.5; } }
 @media only screen and (max-width: 450px) {
   .skills-header {
     font-family: 'Titillium Web', sans-serif;
@@ -137,7 +146,20 @@
     opacity: 0.55;
     text-align: center;
     margin-top: 20px;
-    margin-bottom: 0; } }
+    margin-bottom: 0; }
+
+  .skill-normal {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: justify;
+    margin-top: 0;
+    margin-bottom: 15px;
+    line-height: 1.5; }
+
+  .skill-description-container {
+    padding-left: 10px;
+    padding-right: 10px; } }
 @media only screen and (max-width: 359px) {
   .skills-header-row {
     padding-top: 15px; }
@@ -162,7 +184,7 @@
 
   .myskills {
     font-family: 'Titillium Web', sans-serif;
-    font-size: 28px;
+    font-size: 22px;
     font-weight: 600;
     padding-top: 30px;
     padding-bottom: 10px;

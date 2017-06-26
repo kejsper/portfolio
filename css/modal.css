@@ -1,17 +1,73 @@
-.modal-background {
-  display: none;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: 100;
-  background-color: rgba(0, 0, 0, 0.6);
-  width: 100%;
-  height: 100%; }
+/*
+Error: Undefined mixin 'font-header'.
+        on line 26 of scss/modal.scss, in `font-header'
+        from line 26 of scss/modal.scss
 
-.modal-container {
-  background-color: #fff;
-  width: 50%;
-  height: 50%;
-  border-radius: 20px; }
+21: 
+22: .modal-close {
+23:   position: absolute;
+24:   top: 15px;
+25:   right: 15px;
+26:   @include font-header(20px, 400);
+27:   background-color: white;
+28:   border: 0;
+29:   box-shadow: none !important;
+30:   background-clip: padding-box;
+31:   cursor: pointer;
+
+Backtrace:
+scss/modal.scss:26:in `font-header'
+scss/modal.scss:26
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:351:in `block in visit_mixin'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:98:in `block in with_mixin'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:98:in `with_mixin'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:349:in `visit_mixin'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `map'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:159:in `visit'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:8:in `visit'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/root_node.rb:20:in `render'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/engine.rb:281:in `render'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:494:in `update_stylesheet'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `each'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin.rb:82:in `update_stylesheets'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:340:in `watch_or_update'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:51:in `process_result'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/exec/base.rb:52:in `parse'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/exec/base.rb:19:in `parse!'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/bin/sass:13:in `<top (required)>'
+C:/Ruby23-x64/bin/sass:22:in `load'
+C:/Ruby23-x64/bin/sass:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined mixin 'font-header'.\A         on line 26 of scss/modal.scss, in `font-header'\A         from line 26 of scss/modal.scss\A \A 21: \A 22: .modal-close {\A 23:   position: absolute;\A 24:   top: 15px;\A 25:   right: 15px;\A 26:   @include font-header(20px, 400);\A 27:   background-color: white;\A 28:   border: 0;\A 29:   box-shadow: none !important;\A 30:   background-clip: padding-box;\A 31:   cursor: pointer;"; }

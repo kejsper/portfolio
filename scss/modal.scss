@@ -12,8 +12,43 @@
 }
 
 .modal-container {
+  position: relative;
   background-color: #fff;
-  width: 50%;
-  height: 50%;
+  width: 35%;
+  height: 35%;
   border-radius: 20px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  @include font-header(20px, 400);
+  background-color: white;
+  border: 0;
+  box-shadow: none !important;
+  background-clip: padding-box;
+  cursor: pointer;
+}
+.response {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+
+.message-header {
+  @include font-header(75px, 600);
+  color: black;
+  margin: 0 0;
+}
+.message-subheader {
+  @include font-header(35px, 400);
+  color: black;
+  margin: 0 0;
+}
+
+.message-paragraph {
+  @include font-header(25px, 400);
+  color: black;
+  margin: 0 0;
 }
