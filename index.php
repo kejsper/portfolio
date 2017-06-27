@@ -9,10 +9,11 @@
   <meta property="og:description" content="My portfolio page" />
   <meta property="og:image" content="http://tylendaweb.com/img/welcome-pic.jpg" />
   <title>Kacper Tylenda - Portfolio</title>
+  <link rel="shortcut icon" href="http://tylendaweb.com/img/icons/favicon.ico" type="image/x-icon" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
 
   <!-- inject:css -->
-  <link rel="stylesheet" href="css/dist/styles-b1ed228c58.css">
+  <link rel="stylesheet" href="css/dist/styles-a346eb87ee.css">
   <!-- endinject -->
 
 </head>
@@ -35,6 +36,7 @@
       }
     } else {
       // checking user language and setting page language
+
       $localization = Locale::acceptFromHttp($_SERVER['HTTP_ACCEPT_LANGUAGE']);
       if ($localization === 'pl_PL') {
         include 'content_pl.php';
@@ -42,6 +44,7 @@
       else {
         include 'content_en.php';
       }
+
     }
   ?>
 

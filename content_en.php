@@ -45,10 +45,10 @@
         <div class="row skills-row">
           <h3 class="myskills">Technologies I work with:</h3>
           <div class="skills-container">
-            <img src="img/icons/html.svg" id="html" alt="html" class="skill-icon html">
-            <img src="img/icons/css.svg" id="css" alt="css" class="skill-icon css">
-            <img src="img/icons/js.svg" id="js" alt="js" class="skill-icon js">
-            <img src="img/icons/tools.svg" id="tools" alt="tools" class="skill-icon tools">
+            <img src="img/icons/html_thin.png" id="html" alt="html" class="skill-icon html">
+            <img src="img/icons/css_thin.png" id="css" alt="css" class="skill-icon css">
+            <img src="img/icons/js_thin.png" id="js" alt="js" class="skill-icon js">
+            <img src="img/icons/tools_thin.png" id="tools" alt="tools" class="skill-icon tools">
             <div class="skill-description-container">
               <article id="start" class="skill-description-start active">
                 <p class="skill-muted">Click an icon to find out more</p>
@@ -140,7 +140,7 @@
               Wordpress theme, I tried to refer to a proven
               format, at the same time giving the site a modern
               look and feel. My work was very well received by
-              both the blog’s Author and thousands of its readers.
+              both the <a href="docs/LoRnufcblog.pdf" class="recomendation-link" target="_blank">blog’s Author</a> and thousands of its readers.
             </p>
             <h5 class="site-technology">Technologies used:</h5>
             <ul class="site-technology-list">

@@ -45,10 +45,10 @@
         <div class="row skills-row">
           <h3 class="myskills">Technologie, które wykorzystuję:</h3>
           <div class="skills-container">
-            <img src="img/icons/html.svg" id="html" alt="html" class="skill-icon html">
-            <img src="img/icons/css.svg" id="css" alt="css" class="skill-icon css">
-            <img src="img/icons/js.svg" id="js" alt="js" class="skill-icon js">
-            <img src="img/icons/tools.svg" id="tools" alt="tools" class="skill-icon tools">
+            <img src="img/icons/html_thin.png" id="html" alt="html" class="skill-icon html">
+            <img src="img/icons/css_thin.png" id="css" alt="css" class="skill-icon css">
+            <img src="img/icons/js_thin.png" id="js" alt="js" class="skill-icon js">
+            <img src="img/icons/tools_thin.png" id="tools" alt="tools" class="skill-icon tools">
             <div class="skill-description-container">
               <article id="start" class="skill-description-start active">
                 <p class="skill-muted">Kliknij ikonę by dowiedzieć się więcej</p>
@@ -135,7 +135,7 @@
               starałem się nawiązać do sprawdzonego
               formatu, nadając stronie nowoczesny wygląd. Efekt
               moich prac został bardzo dobrze przyjęty
-              przez Autora i tysiące czytelników bloga.
+              przez <a href="docs/LoRnufcblog.pdf" class="recomendation-link" target="_blank">Autora i tysiące czytelników bloga</a>.
             </p>
             <h5 class="site-technology">Użyte technologie:</h5>
             <ul class="site-technology-list">

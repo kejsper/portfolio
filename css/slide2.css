@@ -1,23 +1,23 @@
 /*
 Error: Undefined mixin 'font-header'.
-        on line 31 of scss/slide2.scss, in `font-header'
-        from line 31 of scss/slide2.scss
+        on line 48 of scss/slide2.scss, in `font-header'
+        from line 48 of scss/slide2.scss
 
-26: @media only screen and (min-width: 992px) {
-27:   .work-row-header {
-28:     padding-top: 40px;
-29:   }
-30:   .work-header {
-31:     @include font-header(100px, 600);
-32:     line-height: 0.9;
-33:     margin: 0 0;
-34:   }
-35:   .work-subheader {
-36:     @include font-header(45px, 400);
+43: @media only screen and (min-width: 992px) {
+44:   .work-row-header {
+45:     padding-top: 40px;
+46:   }
+47:   .work-header {
+48:     @include font-header(100px, 600);
+49:     line-height: 0.9;
+50:     margin: 0 0;
+51:   }
+52:   .work-subheader {
+53:     @include font-header(45px, 400);
 
 Backtrace:
-scss/slide2.scss:31:in `font-header'
-scss/slide2.scss:31
+scss/slide2.scss:48:in `font-header'
+scss/slide2.scss:48
 C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:351:in `block in visit_mixin'
 C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
@@ -84,4 +84,4 @@ C:/Ruby23-x64/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'font-header'.\A         on line 31 of scss/slide2.scss, in `font-header'\A         from line 31 of scss/slide2.scss\A \A 26: @media only screen and (min-width: 992px) {\A 27:   .work-row-header {\A 28:     padding-top: 40px;\A 29:   }\A 30:   .work-header {\A 31:     @include font-header(100px, 600);\A 32:     line-height: 0.9;\A 33:     margin: 0 0;\A 34:   }\A 35:   .work-subheader {\A 36:     @include font-header(45px, 400);"; }
+  content: "Error: Undefined mixin 'font-header'.\A         on line 48 of scss/slide2.scss, in `font-header'\A         from line 48 of scss/slide2.scss\A \A 43: @media only screen and (min-width: 992px) {\A 44:   .work-row-header {\A 45:     padding-top: 40px;\A 46:   }\A 47:   .work-header {\A 48:     @include font-header(100px, 600);\A 49:     line-height: 0.9;\A 50:     margin: 0 0;\A 51:   }\A 52:   .work-subheader {\A 53:     @include font-header(45px, 400);"; }

@@ -23,6 +23,23 @@
   text-align: left;
 }
 
+.recomendation-link {
+  color: black;
+  text-decoration: underline;
+  &:hover {
+    color: black;
+    text-decoration: underline;
+  }
+  &:focus {
+    color: black;
+    text-decoration: underline;
+  }
+  &:link {
+    color: black;
+    text-decoration: underline;
+  }
+}
+
 @media only screen and (min-width: 992px) {
   .work-row-header {
     padding-top: 40px;

@@ -1741,7 +1741,7 @@ html {
     font-weight: 400; } }
 /* SLIDE 1 STYLES */
 .skills-row {
-  padding-bottom: 65px; }
+  padding-bottom: 85px; }
 
 .skills-header,
 .skills-subheader,
@@ -1796,10 +1796,10 @@ html {
     text-align: center; }
 
   .skill-icon {
-    width: 125px;
-    height: 125px;
-    padding-left: 15px;
-    padding-right: 15px; }
+    width: 110px;
+    height: 110px;
+    margin-left: 10px;
+    margin-right: 10px; }
 
   .skill-description-start {
     display: block;
@@ -1877,8 +1877,8 @@ html {
     height: 400px; }
 
   .skill-icon {
-    width: 85px;
-    height: 85px; }
+    width: 65px;
+    height: 65px; }
 
   .skill-muted {
     font-family: 'Titillium Web', sans-serif;
@@ -1932,8 +1932,8 @@ html {
     margin: 0 auto; }
 
   .skill-icon {
-    width: 75px;
-    height: 75px; }
+    width: 55px;
+    height: 55px; }
 
   .skill-muted {
     font-family: 'Titillium Web', sans-serif;
@@ -1980,6 +1980,9 @@ html {
     margin: 0 auto; }
 
   .skills-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     height: 300px;
     position: relative;
@@ -2153,6 +2156,19 @@ html {
 
 .site-technology-item {
   text-align: left; }
+
+.recomendation-link {
+  color: black;
+  text-decoration: underline; }
+  .recomendation-link:hover {
+    color: black;
+    text-decoration: underline; }
+  .recomendation-link:focus {
+    color: black;
+    text-decoration: underline; }
+  .recomendation-link:link {
+    color: black;
+    text-decoration: underline; }
 
 @media only screen and (min-width: 992px) {
   .work-row-header {
