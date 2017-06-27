@@ -243,5 +243,6 @@
   <div class="modal-container">
     <button class="modal-close">zamknij</button>
     <div class="response"></div>
+    <div class="window-close">Zamknij</div>
   </div>
 </div>

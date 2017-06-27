@@ -1,23 +1,23 @@
 /*
 Error: Undefined mixin 'font-header'.
-        on line 26 of scss/modal.scss, in `font-header'
-        from line 26 of scss/modal.scss
+        on line 18 of scss/modal.scss, in `font-header'
+        from line 18 of scss/modal.scss
 
-21: 
-22: .modal-close {
-23:   position: absolute;
-24:   top: 15px;
-25:   right: 15px;
-26:   @include font-header(20px, 400);
-27:   background-color: white;
-28:   border: 0;
-29:   box-shadow: none !important;
-30:   background-clip: padding-box;
-31:   cursor: pointer;
+13: 
+14: .modal-close {
+15:   position: absolute;
+16:   top: 15px;
+17:   right: 15px;
+18:   @include font-header(20px, 400);
+19:   background-color: white;
+20:   border: 0;
+21:   box-shadow: none !important;
+22:   background-clip: padding-box;
+23:   cursor: pointer;
 
 Backtrace:
-scss/modal.scss:26:in `font-header'
-scss/modal.scss:26
+scss/modal.scss:18:in `font-header'
+scss/modal.scss:18
 C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:351:in `block in visit_mixin'
 C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
@@ -70,4 +70,4 @@ C:/Ruby23-x64/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'font-header'.\A         on line 26 of scss/modal.scss, in `font-header'\A         from line 26 of scss/modal.scss\A \A 21: \A 22: .modal-close {\A 23:   position: absolute;\A 24:   top: 15px;\A 25:   right: 15px;\A 26:   @include font-header(20px, 400);\A 27:   background-color: white;\A 28:   border: 0;\A 29:   box-shadow: none !important;\A 30:   background-clip: padding-box;\A 31:   cursor: pointer;"; }
+  content: "Error: Undefined mixin 'font-header'.\A         on line 18 of scss/modal.scss, in `font-header'\A         from line 18 of scss/modal.scss\A \A 13: \A 14: .modal-close {\A 15:   position: absolute;\A 16:   top: 15px;\A 17:   right: 15px;\A 18:   @include font-header(20px, 400);\A 19:   background-color: white;\A 20:   border: 0;\A 21:   box-shadow: none !important;\A 22:   background-clip: padding-box;\A 23:   cursor: pointer;"; }

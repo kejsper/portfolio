@@ -23,7 +23,13 @@ function sendEmail() {
     }
   } else {
     // checking user language and setting page language
-    $lang = 'pl';
+    $localization = Locale::acceptFromHttp($_SERVER['HTTP_ACCEPT_LANGUAGE']);
+    if ($localization === 'pl_PL') {
+      include 'content_pl.php';
+    }
+    else {
+      include 'content_en.php';
+    }
   }
 
   //checking required fields

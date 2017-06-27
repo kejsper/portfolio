@@ -208,7 +208,7 @@ $(document).ready(function() {
       });
   });
 
-  $('.modal-close').on('click', function() {
+  $('.modal-close, .window-close').on('click', function() {
     $('.modal-background').fadeOut(500);
   });
 
