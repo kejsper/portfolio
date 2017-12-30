@@ -154,7 +154,7 @@
           <div class="col-12 col-lg-6">
             <h3 class="site-name">Miu Estetic</h3>
             <div class="site-link-container">
-              <a href="https://kejsper.github.io/miuestetic-one-page/" class="site-link" target="_blank">kejsper.github.io/miuestetic-one-page/</a>
+              <a href="http://www.miuestetic.com/" class="site-link" target="_blank">www.miuestetic.com</a>
             </div>
             <div class="line"></div>
             <p class="site-description">
